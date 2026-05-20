@@ -24,14 +24,14 @@ Este repositorio sirve como un portafolio y biblioteca de estudio para el manejo
 
 El contenido está organizado de manera lógica para facilitar el aprendizaje progresivo:
 
-- 📁 **[`teoria/`](https://github.com/tutosrive/db-relacionales/tree/main/teoria)**: Apuntes, conceptos clave y fundamentos sobre modelado y diseño de bases de datos relacionales.
-- 📁 **[`Practicas/`](https://github.com/tutosrive/db-relacionales/tree/main/Practicas)**: Ejercicios guiados y casos de uso prácticos para asentar conocimientos.
-- 📁 **[`Talleres/`](https://github.com/tutosrive/db-relacionales/tree/main/Talleres)**: Material utilizado en sesiones prácticas y talleres extensos.
-- 📁 **[`ejercicios/`](https://github.com/tutosrive/db-relacionales/tree/main/ejercicios)**: Retos de SQL, ejercicios de álgebra relacional y casos propuestos.
-- 📁 **[`Repasos/`](https://github.com/tutosrive/db-relacionales/tree/main/Repasos)**: Material de revisión y resumen de temas clave.
-- 📁 **[`Referencias Proyectos/`](https://github.com/tutosrive/db-relacionales/tree/main/Referencias%20Proyectos)**: Guías y documentos base para la elaboración de proyectos finales o integradores.
-- 📁 **[`resources/`](https://github.com/tutosrive/db-relacionales/tree/main/resources)**: Imágenes, scripts de bases de datos, datasets u otros archivos complementarios.
-- 📁 **[`OneDrive/`](https://github.com/tutosrive/db-relacionales/tree/main/OneDrive)**: Archivos y copias de seguridad enlazadas o exportadas.
+- 📁 **[`teoria/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/teoria)**: Apuntes, conceptos clave y fundamentos sobre modelado y diseño de bases de datos relacionales.
+- 📁 **[`Practicas/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/Practicas)**: Ejercicios guiados y casos de uso prácticos para asentar conocimientos.
+- 📁 **[`Talleres/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/Talleres)**: Material utilizado en sesiones prácticas y talleres extensos.
+- 📁 **[`ejercicios/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/ejercicios)**: Retos de SQL, ejercicios de álgebra relacional y casos propuestos.
+- 📁 **[`Repasos/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/Repasos)**: Material de revisión y resumen de temas clave.
+- 📁 **[`Referencias Proyectos/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/Referencias%20Proyectos)**: Guías y documentos base para la elaboración de proyectos finales o integradores.
+- 📁 **[`resources/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/resources)**: Imágenes, scripts de bases de datos, datasets u otros archivos complementarios.
+- 📁 **[`OneDrive/`](https://github.com/tutosrive/db-relacionales-2026-1/tree/main/OneDrive)**: Archivos y copias de seguridad enlazadas o exportadas.
 
 ## 🛠️ Tecnologías y Herramientas
 
@@ -60,7 +60,7 @@ La mayoría de los talleres y scripts de implementación práctica están desarr
    - **Opción A (Recomendada):** Sube el archivo `.ipynb` directamente a [Google Colab](https://colab.research.google.com/) para ejecutar el código sin necesidad de instalaciones locales.
    - **Opción B:** Si prefieres trabajar en local y tienes Jupyter instalado:
      ```bash
-     git clone https://github.com/tutosrive/db-relacionales.git
+     git clone https://github.com/tutosrive/db-relacionales-2026-1.git
      cd db-relacionales
      jupyter notebook
      ```
