@@ -1,5 +1,0 @@
-{"idEps": 6001, "nombre": "SaludTotal EPS", "tipoEntidad": "EPS", "direccion": "Carrera 10 # 20-30", "telefono": "+573125412001", "correo": "info@saludtotal.com"}
-{"idEps": 6002, "nombre": "Sura EPS", "tipoEntidad": "EPS", "direccion": "Carrera 20 # 30-40", "telefono": "+573212541230", "correo": "contacto@suraeps.com"}
-{"idEps": 6003, "nombre": "Coomeva EPS", "tipoEntidad": "EPS", "direccion": "Calle 30 # 40-50", "telefono": "+573152456985", "correo": "recepcion@coomevaeps.com"}
-{"idEps": 6004, "nombre": "Sanitas EPS", "tipoEntidad": "EPS", "direccion": "Avenida 40 # 50-60", "telefono": "+573156412584", "correo": "contacto@sanitaseps.com"}
-{"idEps": 6005, "nombre": "Nueva EPS", "tipoEntidad": "EPS", "direccion": "Transversal 50 # 60-70", "telefono": "+573245469526", "correo": "info@nuevaeps.com"}
