@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Página-1" id="OMvMCumO-2eEpSRLYZ25">
+    <mxGraphModel dx="447" dy="296" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="biVmcFw21t_rqfi_3uRr-9" edge="1" parent="1" source="biVmcFw21t_rqfi_3uRr-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-1" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="Estudiante" vertex="1">
+          <mxGeometry height="40" width="100" x="400" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-2" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="Libro" vertex="1">
+          <mxGeometry height="40" width="100" x="401" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-4" edge="1" parent="1" source="biVmcFw21t_rqfi_3uRr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="biVmcFw21t_rqfi_3uRr-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-6" connectable="0" parent="biVmcFw21t_rqfi_3uRr-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="0.2836" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-5" edge="1" parent="1" source="biVmcFw21t_rqfi_3uRr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="biVmcFw21t_rqfi_3uRr-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-8" connectable="0" parent="biVmcFw21t_rqfi_3uRr-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="0.08" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-12" edge="1" parent="1" source="biVmcFw21t_rqfi_3uRr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="481" y="370" />
+              <mxPoint x="540" y="370" />
+            </Array>
+            <mxPoint x="540" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-15" edge="1" parent="1" source="biVmcFw21t_rqfi_3uRr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="biVmcFw21t_rqfi_3uRr-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-3" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="prestamo" vertex="1">
+          <mxGeometry height="60" width="120" x="391" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" value="nombre" vertex="1">
+          <mxGeometry height="40" width="100" x="330" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Prestamo(fecha_prestamo, fecha_devolucion, FK estudiante, FK libro)" vertex="1">
+          <mxGeometry height="30" width="400" x="230" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" value="f_inicio" vertex="1">
+          <mxGeometry height="40" width="100" x="511" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="biVmcFw21t_rqfi_3uRr-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" value="f_devo" vertex="1">
+          <mxGeometry height="40" width="100" x="540" y="380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
