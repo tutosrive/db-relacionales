@@ -1,0 +1,1 @@
+INSERT INTO "public"."alumno_curso" ("cedula_alumno", "codcurso") VALUES ('10000001', '101'), ('10000002', '101'), ('10000003', '102');
