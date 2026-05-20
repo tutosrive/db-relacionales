@@ -1,0 +1,49 @@
+use casinoDB;
+
+/* servicio mas pedido, por el cliente con mas apuestas. */
+
+db.clientes.aggregate([
+    {
+        $lookup: {
+            from: 'sesionesJuego',
+            localField: 'idCliente',
+            foreignField: 'idCliente',
+            as: 'sesiones'
+        }
+    },
+    { $unwind: '$sesiones' },
+    {
+        $addFields: {
+            numApuestas: { $size: '$sesiones.apuestas' }
+        }
+    },
+    {
+        $group: {
+            _id: { idCliente: '$idCliente', nombre: '$nombre' },
+            totalApuestas: { $sum: '$numApuestas' }
+        }
+    },
+    { $sort: { totalApuestas: -1 } },
+    { $limit: 1 },
+    {
+        $lookup: {
+            from: 'reservasHabitacion',
+            localField: '_id.idCliente',
+            foreignField: 'idCliente',
+            as: 'reservas'
+        }
+    },
+    { $unwind: '$reservas' },
+    { $unwind: '$reservas.servicios' },
+    {
+        $group: {
+            _id: {
+                id: '$reservas.servicios.id',
+                descripcion: '$reservas.servicios.descripcion'
+            },
+            vecesPedido: { $sum: 1 }
+        }
+    },
+    { $sort: { vecesPedido: -1 } },
+    { $limit: 1 }
+])

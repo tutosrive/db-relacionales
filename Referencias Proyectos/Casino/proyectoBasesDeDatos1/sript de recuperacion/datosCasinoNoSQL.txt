@@ -1,0 +1,178 @@
+use casinoDB; // Selecciona la base de datos
+
+// Insertar datos en la colección metodosPago
+db.metodosPago.insertMany([
+  { idPago: "1", nombre: "Tarjeta de Crédito", descripcion: "Pago con tarjeta de crédito" },
+  { idPago: "2", nombre: "Efectivo", descripcion: "Pago en efectivo" },
+  { idPago: "3", nombre: "Transferencia Bancaria", descripcion: "Pago mediante transferencia bancaria" }
+]);
+
+// Insertar datos en la colección gerentes
+db.gerentes.insertMany([
+  { idGerente: "1", nombre: "Ana Gomez", correo: "ana.gomez@example.com", cedula: "123456", salario: 500.00 },
+  { idGerente: "2", nombre: "Luis Martinez", correo: "luis.martinez@example.com", cedula: "654321", salario: 600.00 }
+]);
+
+// Insertar datos en la colección empleados
+db.empleados.insertMany([
+  { idEmpleado: "1", nombre: "Pedro", apellido: "Ruiz", correo: "pedro.ruiz@example.com", salario: 50.00, cedula: "111111", idGerente: "1" },
+  { idEmpleado: "2", nombre: "Laura", apellido: "Fernandez", correo: "laura.fernandez@example.com", salario: 60.00, cedula: "222222", idGerente: "2" }
+]);
+
+// Insertar datos en la colección clientes
+db.clientes.insertMany([
+  { idCliente: "1", nombre: "Juan", apellido: "Perez", correo: "juan.perez@example.com", cedula: "1234567890", saldo:120.00, comprasToken: [] },
+  { idCliente: "2", nombre: "Maria", apellido: "Lopez", correo: "maria.lopez@example.com", cedula: "1234567891", saldo:200.00, comprasToken: [] },
+  { idCliente: "3", nombre: "Carlos", apellido: "Garcia", correo: "carlos.garcia@example.com", cedula: "1234567892", saldo:330.00, comprasToken: [] }
+]);
+
+// Insertar datos en la colección tokens
+db.tokens.insertMany([
+  { idToken: "1", valor: 1.00 },
+  { idToken: "2", valor: 5.00 },
+  { idToken: "3", valor: 10.00 }
+]);
+
+// Insertar datos en la colección casinos
+db.casinos.insertMany([
+  { idCasino: "1", nitCasino: "123456789", nombre: "Casino Royal", ubicacion: "Av. Principal 123", capacidadClientes: 500, torneos: [], juegos: [], maquinaExpendedora: [] },
+  { idCasino: "2", nitCasino: "987654321", nombre: "Gran Casino", ubicacion: "Calle Secundaria 456", capacidadClientes: 300, torneos: [], juegos: [], maquinaExpendedora: [] }
+]);
+
+// Insertar datos en la colección juegos
+db.casinos.updateOne(
+  { idCasino: "1" },
+  { $push: { juegos: { idJuego: "1", nombre: "Poker", descripcion: "Juego de cartas" } } }
+);
+
+db.casinos.updateOne(
+  { idCasino: "1" },
+  { $push: { juegos: { idJuego: "2", nombre: "Ruleta", descripcion: "Juego de azar con una rueda" } } }
+);
+
+db.casinos.updateOne(
+  { idCasino: "2" },
+  { $push: { juegos: { idJuego: "3", nombre: "Blackjack", descripcion: "Juego de cartas" } } }
+);
+
+// Insertar datos en la colección torneos
+db.casinos.updateOne(
+  { idCasino: "1" },
+  { $push: { torneos: { premio: "1000.00", nombre: "Torneo de Poker", fecha_inicio: ISODate("2024-07-01T10:00:00Z"), fecha_fin: ISODate("2024-07-01T18:00:00Z") } } }
+);
+
+db.casinos.updateOne(
+  { idCasino: "2" },
+  { $push: { torneos: { premio: "500.00", nombre: "Torneo de Blackjack", fecha_inicio: ISODate("2024-08-01T10:00:00Z"), fecha_fin: ISODate("2024-08-01T18:00:00Z") } } }
+);
+
+// Insertar datos en la colección sesionesJuego
+db.sesionesJuego.insertMany([
+  { idSesionJuego: "1", idJuego: "1", fechaInicio: ISODate("2024-07-01T10:00:00Z"), fechaFinal: ISODate("2024-07-01T12:00:00Z"), idEmpleado: "1", idTorneo: "1", idCliente: "1", apuestas: [] },
+  { idSesionJuego: "2", idJuego: "2", fechaInicio: ISODate("2024-07-01T14:00:00Z"), fechaFinal: ISODate("2024-07-01T15:00:00Z"), idEmpleado: "2", idTorneo: null, idCliente: "2", apuestas: [] }
+]);
+
+// Insertar datos en la colección apuestas
+db.sesionesJuego.updateOne(
+  { idSesionJuego: "1" },
+  { $push: { apuestas: { idApuesta: "1", idToken: "1", cantidad: 10, fechaHora: ISODate("2024-07-01T11:00:00Z"), resultado: "ganado" } } }
+);
+
+db.sesionesJuego.updateOne(
+  { idSesionJuego: "2" },
+  { $push: { apuestas: { idApuesta: "2", idToken: "2", cantidad: 5, fechaHora: ISODate("2024-07-01T14:30:00Z"), resultado: "perdido" } } }
+);
+
+db.sesionesJuego.updateOne(
+  { idSesionJuego: "1" },
+  { $push: { apuestas: { idApuesta: "3", idToken: "1", cantidad: 10, fechaHora: ISODate("2024-07-01T12:00:00Z"), resultado: "ganado" } } }
+);
+
+// Insertar datos en la colección parqueaderos
+db.parqueaderos.insertMany([
+  { idParqueadero: "1", nombre: "Parqueadero Principal", ubicacion: "Subterraneo", tarifa: 20.00 },
+  { idParqueadero: "2", nombre: "Parqueadero Secundario", ubicacion: "Exterior", tarifa: 15.00 }
+]);
+
+// Insertar datos en la colección compraTickes
+db.compraTickes.insertMany([
+  { idCompraTicket: "1", idCliente: "1", idParqueadero: "1", placa: "ABC123", idMetodoPago: "1", fecha: ISODate("2024-07-01T10:00:00Z"), idEmpleado: "1" },
+  { idCompraTicket: "2", idCliente: "2", idParqueadero: "2", placa: "XYZ789", idMetodoPago: "2", fecha: ISODate("2024-07-01T11:00:00Z"), idEmpleado: "2" }
+]);
+
+// Insertar datos en la colección habitaciones
+db.habitaciones.insertMany([
+  { idHabitacion: "1", numero: "101", tipo: "Suite", tarifa: 150.00 },
+  { idHabitacion: "2", numero: "102", tipo: "Doble", tarifa: 100.00 }
+]);
+
+// Insertar datos en la colección reservasHabitacion
+db.reservasHabitacion.insertMany([
+  { idReserva: "1", idCliente: "1", idHabitacion: "1", fechaInicio: ISODate("2024-07-01T00:00:00Z"), fechaFin: ISODate("2024-07-05T00:00:00Z"), idEmpleado: "1", idMetodoPago: "1", fechaReserva: ISODate("2024-06-01T00:00:00Z"), servicios: [] },
+  { idReserva: "2", idCliente: "2", idHabitacion: "2", fechaInicio: ISODate("2024-07-03T00:00:00Z"), fechaFin: ISODate("2024-07-06T00:00:00Z"), idEmpleado: "2", idMetodoPago: "2", fechaReserva: ISODate("2024-06-03T00:00:00Z"), servicios: [] }
+]);
+
+// Insertar datos en la colección serviciosHabitacion
+db.reservasHabitacion.updateOne(
+  { idReserva: "1" },
+  { $push: { servicios: { id: 1, fecha: ISODate("2024-07-01T08:00:00Z"), tarifa: 50.00, descripcion: "Servicio de desayuno" } } }
+);
+
+db.reservasHabitacion.updateOne(
+  { idReserva: "1" },
+  { $push: { servicios: { id: 1 ,fecha: ISODate("2024-07-02T08:00:00Z"), tarifa: 50.00, descripcion: "Servicio de desayuno" } } }
+);
+
+db.reservasHabitacion.updateOne(
+  { idReserva: "1" },
+  { $push: { servicios: { id: 2, fecha: ISODate("2024-07-01T08:00:00Z"), tarifa: 30.00, descripcion: "Servicio de limpieza" } } }
+);
+
+db.reservasHabitacion.updateOne(
+  { idReserva: "2" },
+  { $push: { servicios: { id: 2, fecha: ISODate("2024-07-03T09:00:00Z"), tarifa: 30.00, descripcion: "Servicio de limpieza" } } }
+);
+
+// Insertar datos en la colección maquinasExpendedoras
+db.casinos.updateOne(
+  { idCasino: "1" },
+  { $push: { maquinaExpendedora: { idMaquinaExpendedora: "1", ubicacion: "Pasillo principal", mantenimientos: [] } } }
+);
+
+db.casinos.updateOne(
+  { idCasino: "2" },
+  { $push: { maquinaExpendedora: { idMaquinaExpendedora: "2", ubicacion: "Entrada principal", mantenimientos: [] } } }
+);
+
+// Insertar datos en la colección operadores
+db.operadores.insertMany([
+  { idOperador: "1", nombre: "Juan", nombreEmpresa: "TechService", cedula: "1234567890" },
+  { idOperador: "2", nombre: "Maria", nombreEmpresa: "RepairCo", cedula: "0987654321" }
+]);
+
+// Insertar datos en la colección mantenimientos
+db.casinos.updateOne(
+  { "maquinaExpendedora.idMaquinaExpendedora": "1" },
+  { $push: { "maquinaExpendedora.$.mantenimientos": { idOperador: "1", fecha: ISODate("2024-07-01T10:00:00Z"), descripcion: "Reparación de pantalla", costo: 100.00 } } }
+);
+
+db.casinos.updateOne(
+  { "maquinaExpendedora.idMaquinaExpendedora": "2" },
+  { $push: { "maquinaExpendedora.$.mantenimientos": { idOperador: "2", fecha: ISODate("2024-07-02T11:00:00Z"), descripcion: "Reemplazo de teclado", costo: 150.00 } } }
+);
+
+// Insertar datos en la colección comprasToken
+db.clientes.updateOne(
+  { idCliente: "1" },
+  { $push: { comprasToken: { cantidad: 10, fechaHora: ISODate("2024-06-01T10:00:00Z"), idEmpleado: "1", idMetodoPago: "1", idToken: "1" } } }
+);
+
+db.clientes.updateOne(
+  { idCliente: "2" },
+  { $push: { comprasToken: { cantidad: 5, fechaHora: ISODate("2024-06-01T11:00:00Z"), idEmpleado: "2", idMetodoPago: "2", idToken: "2" } } }
+);
+
+db.clientes.updateOne(
+  { idCliente: "3" },
+  { $push: { comprasToken: { cantidad: 3, fechaHora: ISODate("2024-06-01T12:00:00Z"), idEmpleado: "1", idMetodoPago: "3", idToken: "3" } } }
+);

@@ -1,0 +1,297 @@
+use casinoDB; 
+
+// Definir colección de gerentes
+db.createCollection("gerentes", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idGerente", "nombre", "correo", "cedula", "salario"],
+      properties: {
+        idGerente: { bsonType: "string" },
+        nombre: { bsonType: "string" },
+        correo: { bsonType: "string" },
+        cedula: { bsonType: "string" },
+        salario: { bsonType: "number" }
+      }
+    }
+  }
+});
+
+// Definir colección de empleados con referencia a gerentes
+db.createCollection("empleados", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idEmpleado", "nombre", "apellido", "correo", "salario", "cedula", "idGerente"],
+      properties: {
+        idEmpleado: { bsonType: "string" },
+        nombre: { bsonType: "string" },
+        apellido: { bsonType: "string" },
+        correo: { bsonType: "string" },
+        salario: { bsonType: "number" },
+        cedula: { bsonType: "string" },
+        idGerente: { bsonType: "string" }
+      }
+    }
+  }
+});
+
+// Definir colección de clientes con referencia a empleados
+db.createCollection("clientes", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idCliente", "nombre", "apellido", "correo", "cedula", "saldo", "comprasToken"],
+      properties: {
+        idCliente: { bsonType: "string" },
+        nombre: { bsonType: "string" },
+        apellido: { bsonType: "string" },
+        correo: { bsonType: "string" },
+        cedula: { bsonType: "string" },
+        saldo: { bsonType: "number" },
+        comprasToken: {
+          bsonType: "array",
+          items: {
+            bsonType: "object",
+            required: ["cantidad", "fechaHora", "idEmpleado", "idMetodoPago", "idToken"],
+            properties: {
+              cantidad: { bsonType: "number" },
+              fechaHora: { bsonType: "date" },
+              idEmpleado: { bsonType: "string" },
+              idMetodoPago: { bsonType: "string" },
+              idToken: { bsonType: "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+});
+
+// Definir colección de casinos
+db.createCollection("casinos", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idCasino", "nitCasino", "nombre", "ubicacion", "capacidadClientes", "torneos", "juegos", "maquinaExpendedora"],
+      properties: {
+        idCasino: { bsonType: "string" },
+        nitCasino: { bsonType: "string" },
+        nombre: { bsonType: "string" },
+        ubicacion: { bsonType: "string" },
+        capacidadClientes: { bsonType: "number" },
+        torneos: {
+          bsonType: "array",
+          items: {
+            bsonType: "object",
+            required: ["premio", "nombre", "fecha_inicio", "fecha_fin"],
+            properties: {
+              premio: { bsonType: "string" },
+              nombre: { bsonType: "string" },
+              fecha_inicio: { bsonType: "date" },
+              fecha_fin: { bsonType: "date" }
+            }
+          }
+        },
+        juegos: {
+          bsonType: "array",
+          items: {
+            bsonType: "object",
+            required: ["idJuego", "nombre", "descripcion"],
+            properties: {
+              idJuego: { bsonType: "string" },
+              nombre: { bsonType: "string" },
+              descripcion: { bsonType: "string" }
+            }
+          }
+        },
+        maquinaExpendedora: {
+          bsonType: "array",
+          items: {
+            bsonType: "object",
+            required: ["idMaquinaExpendedora", "ubicacion", "mantenimientos"],
+            properties: {
+              idMaquinaExpendedora: { bsonType: "string" },
+              ubicacion: { bsonType: "string" },
+              mantenimientos: {
+                bsonType: "array",
+                items: {
+                  bsonType: "object",
+                  required: ["idOperador", "fecha", "descripcion", "costo"],
+                  properties: {
+                    idOperador: { bsonType: "string" },
+                    fecha: { bsonType: "date" },
+                    descripcion: { bsonType: "string" },
+                    costo: { bsonType: "number" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+});
+
+// Definir colección de sesionesJuego con referencias a empleados, clientes y torneos
+db.createCollection("sesionesJuego", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idSesionJuego", "idJuego", "fechaInicio", "fechaFinal", "idEmpleado", "idTorneo", "idCliente", "apuestas"],
+      properties: {
+        idSesionJuego: { bsonType: "string" },
+        idJuego: { bsonType: "string" },
+        fechaInicio: { bsonType: "date" },
+        fechaFinal: { bsonType: "date" },
+        idEmpleado: { bsonType: "string" },
+        idTorneo: { bsonType: ["string", "null"] },
+        idCliente: { bsonType: "string" },
+        apuestas: {
+          bsonType: "array",
+          items: {
+            bsonType: "object",
+            required: ["idApuesta", "idToken", "cantidad", "fechaHora", "resultado"],
+            properties: {
+              idApuesta: { bsonType: "string" },
+              idToken: { bsonType: "string" },
+              cantidad: { bsonType: "number" },
+              fechaHora: { bsonType: "date" },
+              resultado: { bsonType: "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+});
+
+// Definir colección de tokens
+db.createCollection("tokens", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idToken", "valor"],
+      properties: {
+        idToken: { bsonType: "string" },
+        valor: { bsonType: "number" }
+      }
+    }
+  }
+});
+
+// Definir colección de metodosPago
+db.createCollection("metodosPago", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idPago", "nombre", "descripcion"],
+      properties: {
+        idPago: { bsonType: "string" },
+        nombre: { bsonType: "string" },
+        descripcion: { bsonType: "string" }
+      }
+    }
+  }
+});
+
+// Definir colección de operadores
+db.createCollection("operadores", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idOperador", "nombre", "nombreEmpresa", "cedula"],
+      properties: {
+        idOperador: { bsonType: "string" },
+        nombre: { bsonType: "string" },
+        nombreEmpresa: { bsonType: "string" },
+        cedula: { bsonType: "string" }
+      }
+    }
+  }
+});
+
+// Definir colección de parqueaderos
+db.createCollection("parqueaderos", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idParqueadero", "nombre", "ubicacion", "tarifa"],
+      properties: {
+        idParqueadero: { bsonType: "string" },
+        nombre: { bsonType: "string" },
+        ubicacion: { bsonType: "string" },
+        tarifa: { bsonType: "number" }
+      }
+    }
+  }
+});
+
+// Definir colección de compraTickes con referencias a clientes, parqueaderos y empleados
+db.createCollection("compraTickes", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idCompraTicket", "idCliente", "idParqueadero", "placa", "idMetodoPago", "fecha", "idEmpleado"],
+      properties: {
+        idCompraTicket: { bsonType: "string" },
+        idCliente: { bsonType: "string" },
+        idParqueadero: { bsonType: "string" },
+        placa: { bsonType: "string" },
+        idMetodoPago: { bsonType: "string" },
+        fecha: { bsonType: "date" },
+        idEmpleado: { bsonType: "string" }
+      }
+    }
+  }
+});
+
+// Definir colección de habitaciones
+db.createCollection("habitaciones", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idHabitacion", "numero", "tipo", "tarifa"],
+      properties: {
+        idHabitacion: { bsonType: "string" },
+        numero: { bsonType: "string" },
+        tipo: { bsonType: "string" },
+        tarifa: { bsonType: "number" }
+      }
+    }
+  }
+});
+
+// Definir colección de reservasHabitacion con referencias a clientes, habitaciones, empleados y metodosPago
+db.createCollection("reservasHabitacion", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["idReserva", "idCliente", "idHabitacion", "fechaInicio", "fechaFin", "idEmpleado", "idMetodoPago", "fechaReserva", "servicios"],
+      properties: {
+        idReserva: { bsonType: "string" },
+        idCliente: { bsonType: "string" },
+        idHabitacion: { bsonType: "string" },
+        fechaInicio: { bsonType: "date" },
+        fechaFin: { bsonType: "date" },
+        idEmpleado: { bsonType: "string" },
+        idMetodoPago: { bsonType: "string" },
+        fechaReserva: { bsonType: "date" },
+        servicios: {
+          bsonType: "array",
+          items: {
+            bsonType: "object",
+            required: ["id", "fecha", "tarifa", "descripcion"],
+            properties: {
+              id: { bsonType: "number" },
+              fecha: { bsonType: "date" },
+              tarifa: { bsonType: "number" },
+              descripcion: { bsonType: "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+});

@@ -1,0 +1,299 @@
+use miBaseDeDatos;
+
+// Inserciones en la colección `empleado`
+db.empleado.insertMany([
+    { "idEmpleado": "1", "cedEmpleado": "111222333", "nombre": "Michael", "apellido": "Johnson", "telefono": "555-1111", "correo": "michael.johnson@example.com", "salario": NumberDecimal("50000.00")},
+    { "idEmpleado": "2", "cedEmpleado": "444555666", "nombre": "Emily", "apellido": "Davis", "telefono": "555-2222", "correo": "emily.davis@example.com", "salario": NumberDecimal("45000.00")},
+    { "idEmpleado": "3", "cedEmpleado": "777888999", "nombre": "David", "apellido": "Martinez", "telefono": "555-3333", "correo": "david.martinez@example.com", "salario": NumberDecimal("47000.00")}
+]);
+
+// Inserciones en la colección `juego`
+db.juego.insertMany([
+    { "idJuego": "1", "tipoJuego": "Slots", "nombre": "Mega Jackpot", "descripcion": "High-stakes slot machines" },
+    { "idJuego": "2", "tipoJuego": "Poker", "nombre": "Texas Holdem", "descripcion": "Poker game with high rewards" },
+    { "idJuego": "3", "tipoJuego": "Roulette", "nombre": "European Roulette", "descripcion": "Classic casino game" }
+]);
+
+
+// Inserciones en la colección `casino`
+db.casino.insertMany([
+    { "nitCasino": "1", "ubicacion": "Las Vegas", "capacidadClientes": 1000, "juego": ["1"], "torneo": [{ "idTorneo": "1", "premio": NumberDecimal("10000.00"), "fecha": new Date("2024-06-01T00:00:00Z"), "estado": "Upcoming", "capacidad": 50, "numParticipantes": 10 }], "gerente": { "empleadoID": "1", "idGerente": "1", "nombre": "Carlos", "apellido": "Santana" } },
+    { "nitCasino": "2", "ubicacion": "Atlantic City", "capacidadClientes": 750, "juego": ["2"], "torneo": [{ "idTorneo": "2", "premio": NumberDecimal("5000.00"), "fecha": new Date("2024-06-02T00:00:00Z"), "estado": "Ongoing", "capacidad": 30, "numParticipantes": 15 }], "gerente": { "empleadoID": "2", "idGerente": "2", "nombre": "Maria", "apellido": "Lopez" } },
+    { "nitCasino": "3", "ubicacion": "Monte Carlo", "capacidadClientes": 500, "juego": ["3"], "torneo": [{ "idTorneo": "3", "premio": NumberDecimal("2000.00"), "fecha": new Date("2024-06-03T00:00:00Z"), "estado": "Completed", "capacidad": 20, "numParticipantes": 20 }], "gerente": { "empleadoID": "3", "idGerente": "2", "nombre": "Maria", "apellido": "Lopez" } }
+]);
+
+
+// Inserciones en la colección `cliente`
+db.cliente.insertMany([
+    { "idCliente": "1", "cedCliente": "123456789", "nombre": "John", "apellido": "Doe", "telefono": "555-1234", "correo": "john.doe@example.com", "edad": 30, "sesionJuego": [] },
+    { "idCliente": "2", "cedCliente": "987654321", "nombre": "Jane", "apellido": "Smith", "telefono": "555-5678", "correo": "jane.smith@example.com", "edad": 25, "sesionJuego": [] },
+    { "idCliente": "3", "cedCliente": "456789123", "nombre": "Alice", "apellido": "Brown", "telefono": "555-8765", "correo": "alice.brown@example.com", "edad": 35, "sesionJuego": [] }
+]);
+
+// Inserciones en la colección `juego`
+db.juego.insertMany([
+    { "idJuego": "1", "tipoJuego": "Slots", "nombre": "Mega Jackpot", "descripcion": "High-stakes slot machines" },
+    { "idJuego": "2", "tipoJuego": "Poker", "nombre": "Texas Holdem", "descripcion": "Poker game with high rewards" },
+    { "idJuego": "3", "tipoJuego": "Roulette", "nombre": "European Roulette", "descripcion": "Classic casino game" }
+]);
+
+// Inserciones en la colección `maquinaExpendedora`
+db.maquinaExpendedora.insertMany([
+    { "numSerie": "1001", "capacidad": 50, "montoDisponible": NumberDecimal("100.00"), "tipoMaquina": "Snacks", "operadorxmaquina": [] },
+    { "numSerie": "1002", "capacidad": 100, "montoDisponible": NumberDecimal("200.00"), "tipoMaquina": "Drinks", "operadorxmaquina": [] },
+    { "numSerie": "1003", "capacidad": 30, "montoDisponible": NumberDecimal("50.00"), "tipoMaquina": "Tickets", "operadorxmaquina": [] }
+]);
+
+// Inserciones en la colección `metodoPago`
+db.metodoPago.insertMany([
+    { "idPago": "1", "tipoPago": "Credit Card", "datosPago": "Visa, MasterCard, Amex" },
+    { "idPago": "2", "tipoPago": "Cash", "datosPago": "USD" },
+    { "idPago": "3", "tipoPago": "Cryptocurrency", "datosPago": "Bitcoin, Ethereum" }
+]);
+
+// Inserciones en la colección `reservarHabitacion`
+db.reservarHabitacion.insertMany([
+    {
+        "idCliente": "1",
+        "fechaEntrada": new Date("2024-06-01T00:00:00Z"),
+        "fechaSalida": new Date("2024-06-05T00:00:00Z"),
+        "descripcion": "Suite reservation",
+        "tarifaxproductoBarato": 50.00,
+        "tarifaxproductoMedio": 100.00,
+        "tarifaxproductoCaro": 150.00,
+        "total": 800.00,
+        "idMetodoPago": "1",
+        "idEmpleado": "1",
+        "habitacion": { "idHabitacion": "1", "capacidad": 2, "tipo": "Suite", "estado": "Disponible" }
+    },
+    {
+        "idCliente": "2",
+        "fechaEntrada": new Date("2024-06-02T00:00:00Z"),
+        "fechaSalida": new Date("2024-06-06T00:00:00Z"),
+        "descripcion": "Double room reservation",
+        "tarifaxproductoBarato": 40.00,
+        "tarifaxproductoMedio": 80.00,
+        "tarifaxproductoCaro": 120.00,
+        "total": 600.00,
+        "idMetodoPago": "2",
+        "idEmpleado": "2",
+        "habitación": { "idHabitacion": "2", "capacidad": 4, "tipo": "Double", "estado": "Ocupado" }
+    }
+]);
+
+// Inserciones en la colección `cliente` para las sesiones de juego
+db.cliente.updateOne(
+    { "idCliente": "1" },
+    {
+        $push: {
+            "sesionJuego": {
+                "idJuego": "1",
+                "fecha": new Date("2024-06-01T14:00:00Z"),
+                "horaInicio": "14:00",
+                "horaFinal": "16:00",
+                "idEmpleado": "1",
+                "apuesta": []
+            }
+        }
+    }
+);
+db.cliente.updateOne(
+    { "idCliente": "2" },
+    {
+        $push: {
+            "sesionJuego": {
+                "idJuego": "2",
+                "fecha": new Date("2024-06-02T18:00:00Z"),
+                "horaInicio": "18:00",
+                "horaFinal": "20:00",
+                "idEmpleado": "2",
+                "apuesta": []
+            }
+        }
+    }
+);
+db.cliente.updateOne(
+    { "idCliente": "3" },
+    {
+        $push: {
+            "sesionJuego": {
+                "idJuego": "3",
+                "fecha": new Date("2024-06-03T12:00:00Z"),
+                "horaInicio": "12:00",
+                "horaFinal": "14:00",
+                "idEmpleado": "3",
+                "apuesta": []
+            }
+        }
+    }
+);
+
+// Inserciones en la colección `transaccionToken`
+db.transaccionToken.insertMany([
+    {
+        "idTransaccion": "1",
+        "tipoTransaccion": "Purchase",
+        "cantidad": 10,
+        "fechaHora": new Date("2024-06-01T12:00:00Z"),
+        "idMetodoPago": "1",
+        "idEmpleado": "1",
+        "token": [{ "idToken": "1", "valor": 10.00, "tipoToken": "Gold" }]
+    },
+    {
+        "idTransaccion": "2",
+        "tipoTransaccion": "Refund",
+        "cantidad": 5,
+        "fechaHora": new Date("2024-06-02T13:00:00Z"),
+        "idMetodoPago": "2",
+        "idEmpleado": "2",
+        "token": [{ "idToken": "2", "valor": 5.00, "tipoToken": "Silver" }]
+    },
+    {
+        "idTransaccion": "3",
+        "tipoTransaccion": "Purchase",
+        "cantidad": 10,
+        "fechaHora": new Date("2024-06-03T14:00:00Z"),
+        "idMetodoPago": "3",
+        "idEmpleado": "3",
+        "token": [{ "idToken": "3", "valor": 1.00, "tipoToken": "Bronze" }]
+    }
+]);
+
+// Inserciones en la colección `apuesta`
+db.cliente.updateOne(
+    { "idCliente": "1" },
+    {
+        $push: {
+            "sesionJuego.0.apuesta": {
+                "idApuesta": "1",
+                "montoApuesta": 100.00,
+                "fechaHora": new Date("2024-06-01T14:00:00Z"),
+                "resultado": "Win",
+                "montoGanancia": 150.00
+            }
+        }
+    }
+);
+db.cliente.updateOne(
+    { "idCliente": "2" },
+    {
+        $push: {
+            "sesionJuego.0.apuesta": {
+                "idApuesta": "2",
+                "montoApuesta": 50.00,
+                "fechaHora": new Date("2024-06-02T18:00:00Z"),
+                "resultado": "Loss",
+                "montoGanancia": 0.00
+            }
+        }
+    }
+);
+db.cliente.updateOne(
+    { "idCliente": "3" },
+    {
+        $push: {
+            "sesionJuego.0.apuesta": {
+                "idApuesta": "3",
+                "montoApuesta": 200.00,
+                "fechaHora": new Date("2024-06-03T12:00:00Z"),
+                "resultado": "Win",
+                "montoGanancia": 300.00
+            }
+        }
+    }
+);
+
+// Inserciones en la colección `compraTicket`
+db.compraTicket.insertMany([
+    {
+        "idCliente": "1",
+        "fechaEntrada": new Date("2024-06-01T10:00:00Z"),
+        "fechaSalida": new Date("2024-06-01T12:00:00Z"),
+        "total": 5.00,
+        "tipoVehiculo": "carro",
+        "estado": "Pagado",
+        "placaVehiculo": "ABC123",
+        "idMetodoPago": "1",
+        "idEmpleado": "1",
+        "parqueadero": {
+            "capacidad": 30,
+            "carrosLibre": 20,
+            "motosLibre": 10
+        }
+    },
+    {
+        "idCliente": "2",
+        "fechaEntrada": new Date("2024-06-02T11:00:00Z"),
+        "fechaSalida": null,
+        "total": 3.00,
+        "tipoVehiculo": "moto",
+        "estado": "Pendiente",
+        "placaVehiculo": "XYZ987",
+        "idMetodoPago": "2",
+        "idEmpleado": "2",
+        "parqueadero": {
+            "capacidad": 40,
+            "carrosLibre": 25,
+            "motosLibre": 15
+        }
+    },
+    {
+        "idCliente": "3",
+        "fechaEntrada": new Date("2024-06-03T09:00:00Z"),
+        "fechaSalida": new Date("2024-06-03T10:30:00Z"),
+        "total": 3.00,
+        "tipoVehiculo": "carro",
+        "estado": "Pagado",
+        "placaVehiculo": "LMN456",
+        "idMetodoPago": "3",
+        "idEmpleado": "3",
+        "parqueadero": {
+            "capacidad": 20,
+            "carrosLibre": 15,
+            "motosLibre": 5
+        }
+    }
+]);
+
+// Inserciones en la colección `operadorxmaquina`
+db.maquinaExpendedora.updateOne(
+    { "numSerie": "1001" },
+    {
+        $push: {
+            "operadorxmaquina": {
+                "fecha": new Date("2024-06-01T00:00:00Z"),
+                "costo": 100.00,
+                "descripcion": "Mantenimiento de rutina",
+                "operador": { "idOperator": "1", "cedOperador": "555444333", "nombre": "Sam", "nombreEmpresa": "OperatorCorp" }
+            }
+        }
+    }
+);
+db.maquinaExpendedora.updateOne(
+    { "numSerie": "1002" },
+    {
+        $push: {
+            "operadorxmaquina": {
+                "fecha": new Date("2024-06-02T00:00:00Z"),
+                "costo": 200.00,
+                "descripcion": "Reabastecimiento de productos",
+                "operador": { "idOperator": "2", "cedOperador": "222111000", "nombre": "Alex", "nombreEmpresa": "Vendomatic" }
+            }
+        }
+    }
+);
+db.maquinaExpendedora.updateOne(
+    { "numSerie": "1003" },
+    {
+        $push: {
+            "operadorxmaquina": {
+                "fecha": new Date("2024-06-03T00:00:00Z"),
+                "costo": 150.00,
+                "descripcion": "Reparación técnica",
+                "operador": { "idOperator": "3", "cedOperador": "333222111", "nombre": "Jordan", "nombreEmpresa": "SnackMaster" }
+            }
+        }
+    }
+);
+
+print("Datos insertados exitosamente.");

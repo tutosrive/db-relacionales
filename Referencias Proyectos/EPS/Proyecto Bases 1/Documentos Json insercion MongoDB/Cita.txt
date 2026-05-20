@@ -1,0 +1,366 @@
+{"idCita": 15001, "idMedico": 13001, "idPaciente": 14001, "fecha": "2024-05-01", "hora": "06:00:00", "motivo": "Electrocardiograma", "diagnostico": {"idDiagnostico": 16001, "idHistoriaClinica": 21001, "descripcion": "Electrocardiograma", "tratamiento": "Tratamiento con medicamentos antihipertensivos",
+"medicamento": [
+		{"idMedicamento": 17001, "fecha": "2024-05-01", "cantidad": 30},
+		{"idMedicamento": 17002, "fecha": "2024-05-01", "cantidad": 15}
+],
+"servicio": [
+	{"idServicio": 18015, "fecha": "2024-05-05", "descripcion": "Electrocardiograma"}
+]}
+},
+
+{"idCita": 15002, "idMedico": 13001, "idPaciente": 14030, "fecha": "2024-05-01", "hora": "07:00:00", "motivo": "Electrocardiograma", "diagnostico":{"idDiagnostico": 16002, "idHistoriaClinica": 21030, "descripcion": "Electrocardiograma", "tratamiento": "Tratamiento para hipotensión",
+"medicamento": [
+		{"idMedicamento": 17003, "fecha": "2024-05-01", "cantidad": 20},
+		{"idMedicamento": 17004, "fecha": "2024-05-01", "cantidad": 25}
+],
+"servicio": [
+		{"idServicio": 18015, "fecha": "2024-05-05", "descripcion": "Electrocardiograma"}
+]}
+},
+
+{"idCita": 15003, "idMedico": 13001, "idPaciente": 14002, "fecha": "2024-05-02", "hora": "08:00:00", "motivo": "Monitoreo Holter", "diagnostico":{"idDiagnostico": 16003, "idHistoriaClinica": 21002, "descripcion": "Monitoreo Holter", "tratamiento": "Reposo e hidratación, medicamentos para la tensión",
+"medicamento": [
+		{"idMedicamento": 17005, "fecha": "2024-05-01", "cantidad": 10},
+		{"idMedicamento": 17006, "fecha": "2024-05-01", "cantidad": 20}
+],
+"servicio": [
+		{"idServicio": 18014, "fecha": "2024-05-05", "descripcion": "Holter de presión arterial"}
+]}
+},
+
+{"idCita": 15004, "idMedico": 13001, "idPaciente": 14003, "fecha": "2024-05-03", "hora": "11:00:00", "motivo": "Monitoreo Holter", "diagnostico": {"idDiagnostico": 16004, "idHistoriaClinica": 21003, "idCita": 15004, "descripcion": "Monitoreo Holter", "tratamiento": "Control de glucosa, dieta y ejercicio",
+"medicamento": [
+		{"idMedicamento": 17007, "fecha": "2024-05-01", "cantidad": 15},
+		{"idMedicamento": 17008, "fecha": "2024-05-01", "cantidad": 30}
+
+		],
+"servicio": [{"idServicio": 18014, "fecha": "2024-05-05", "descripcion": "Holter de presión arterial"}]}
+},
+
+{"idCita": 15005, "idMedico": 13001, "idPaciente": 14029, "fecha": "2024-05-05", "hora": "09:00:00", "motivo": "Tac", "diagnostico":{"idDiagnostico": 16005, "idHistoriaClinica": 21029, "descripcion": "Tac", "tratamiento": "Realizar ejercicios de respiración profunda y relajación",
+"medicamento": [
+		{"idMedicamento": 17009, "fecha": "2024-05-01", "cantidad": 10},
+		{"idMedicamento": 17010, "fecha": "2024-05-01", "cantidad": 20}
+],
+"servicio": [{"idServicio": 18007, "fecha": "2024-05-05", "descripcion": "Tomografía computrizada"}]}
+},
+
+{"idCita": 15006, "idMedico": 13002, "idPaciente": 14028, "fecha": "2024-05-01", "hora": "13:00:00", "motivo": "Revisión de presión arterial", "diagnostico": {"idDiagnostico": 16006, "idHistoriaClinica": 21028, "descripcion": "Revisión de presión arterial", "tratamiento": "Dieta saludable, diuréticos tiazídicos",
+"medicamento": [
+		{"idMedicamento": 17011, "fecha": "2024-05-01", "cantidad": 25},
+		{"idMedicamento": 17012, "fecha": "2024-05-01", "cantidad": 15}
+
+		],
+"servicio": [{"idServicio": 18014, "fecha": "2024-05-05", "descripcion": "Presión arterial"}]}
+},
+
+{"idCita": 15007, "idMedico": 13002, "idPaciente": 14004, "fecha": "2024-05-01", "hora": "10:00:00", "motivo": "TAC", "diagnostico":{"idDiagnostico": 16007, "idHistoriaClinica": 21004, "descripcion": "Tac", "tratamiento": "Realizar ejercicios de respiración profunda y relajación",
+"medicamento": [
+		{"idMedicamento": 17013, "fecha": "2024-05-01", "cantidad": 10},
+		{"idMedicamento": 17014, "fecha": "2024-05-01", "cantidad": 30}
+
+],
+"servicio": [{"idServicio": 18007, "fecha": "2024-05-05", "descripcion": "Tomografía computarizada"}]}
+},
+
+{"idCita": 15008, "idMedico": 13002, "idPaciente": 14027, "fecha": "2024-05-04", "hora": "18:00:00", "motivo": "Dolor en el pecho", "diagnostico":{"idDiagnostico": 16008, "idHistoriaClinica": 21027, "descripcion": "Dolor en el pecho", "tratamiento": "Reposo e hidratación, tomar una aspirina cada 8 horas",
+"medicamento": [
+		{"idMedicamento": 17015, "fecha": "2024-05-01", "cantidad": 20},
+		{"idMedicamento": 17016, "fecha": "2024-05-01", "cantidad": 15}
+
+],
+"servicio": [{"idServicio": 18007, "fecha": "2024-05-05", "descripcion": "Tomografía computarizada"}]}
+},
+
+{"idCita": 15009, "idMedico": 13002, "idPaciente": 14005, "fecha": "2024-05-04", "hora": "19:00:00", "motivo": "Soplo en el corazón", "diagnostico":{"idDiagnostico": 16009, "idHistoriaClinica": 21005, "descripcion": "Soplo en el corazón", "tratamiento": "Diuréticos, anticoagulantes y visita regular al cardiólogo",
+"medicamento": [
+		{"idMedicamento": 17017, "fecha": "2024-05-01", "cantidad": 10},
+		{"idMedicamento": 17018, "fecha": "2024-05-01", "cantidad": 25}
+
+],
+"servicio": [{"idServicio": 18015, "fecha": "2024-05-05", "descripcion": "Electrocardiograma"}]}
+},
+
+{"idCita": 15010, "idMedico": 13002, "idPaciente": 14026, "fecha": "2024-05-04", "hora": "20:00:00", "motivo": "Arritmia cardiaca", "diagnostico":{"idDiagnostico": 16010, "idHistoriaClinica": 21026, "descripcion": "Arritmia cardiaca", "tratamiento": "Dieta y medicamentos",
+"medicamento": [
+		{"idMedicamento": 17019, "fecha": "2024-05-01", "cantidad": 15},
+		{"idMedicamento": 17020, "fecha": "2024-05-01", "cantidad": 30}
+
+],
+"servicio": [{"idServicio": 18015, "fecha": "2024-05-05", "descripcion": "Electrocardiograma"}]}
+},
+
+{"idCita": 15011, "idMedico": 13003, "idPaciente": 14006, "fecha": "2024-05-03", "hora": "14:00:00", "motivo": "Consulta pediatría", "diagnostico":{"idDiagnostico": 16011, "idHistoriaClinica": 21006, "descripcion": "Consulta pediatría", "tratamiento": "Reposo y líquidos, buena alimentación",
+"medicamento": [
+		{"idMedicamento": 17021, "fecha": "2024-05-01", "cantidad": 10},
+		{"idMedicamento": 17022, "fecha": "2024-05-01", "cantidad": 20}
+
+],
+"servicio": [{"idServicio": 18017, "fecha": "2024-05-05", "descripcion": "Densimetría osea"}]}
+},
+
+{"idCita": 15012, "idMedico": 13005, "idPaciente": 14025, "fecha": "2024-05-05", "hora": "10:00:00", "motivo": "Consulta pediatría", "diagnostico": {"idDiagnostico": 16012, "idHistoriaClinica": 21025, "descripcion": "Consulta pediatría", "tratamiento": "Buena alimentacion, vacunacion",
+"medicamento": [
+		{"idMedicamento": 17023, "fecha": "2024-05-01", "cantidad": 15},
+		{"idMedicamento": 17024, "fecha": "2024-05-01", "cantidad": 25}
+
+],
+"servicio": [{"idServicio": 18020, "fecha": "2024-05-05", "descripcion": "Ecografía renal"}
+]}
+},
+
+{"idCita": 15013, "idMedico": 13007, "idPaciente": 14007, "fecha": "2024-05-02", "hora": "15:00:00", "motivo": "Consulta ginecólogía", "diagnostico": {"idDiagnostico": 16013, "idHistoriaClinica": 21007, "descripcion": "Consulta ginecológica", "tratamiento": "Antifúngicos como clotrimazol o fluconazol",
+"medicamento": [
+		{"idMedicamento": 17025, "fecha": "2024-05-01", "cantidad": 10},
+		{"idMedicamento": 17026, "fecha": "2024-05-01", "cantidad": 20}
+
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15014, "idMedico": 13007, "idPaciente": 14023, "fecha": "2024-05-02", "hora": "16:00:00", "motivo": "Consulta ginecología", "diagnostico": {"idDiagnostico": 16014, "idHistoriaClinica": 21023, "descripcion": "Consulta ginecológica", "tratamiento": "Anticonceptivos hormonales, para regular el ciclo menstrual",
+"medicamento": [
+		{"idMedicamento": 17027, "fecha": "2024-05-01", "cantidad": 30},
+		{"idMedicamento": 17028, "fecha": "2024-05-01", "cantidad": 15}
+
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15015, "idMedico": 13007, "idPaciente": 14001, "fecha": "2024-05-02", "hora": "17:00:00", "motivo": "Consulta ginecología", "diagnostico": {"idDiagnostico": 16015, "idHistoriaClinica": 21001, "descripcion": "Consulta ginecológica", "tratamiento": "Analgésicos y antiinflamatorios, como el ibuprofeno",
+"medicamento": [
+		{"idMedicamento": 17029, "fecha": "2024-05-01", "cantidad": 10},
+		{"idMedicamento": 17030, "fecha": "2024-05-01", "cantidad": 25}
+
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15016, "idMedico": 13007, "idPaciente": 14003, "fecha": "2024-05-02", "hora": "18:00:00", "motivo": "Consulta ginecología", "diagnostico": {"idDiagnostico": 16016, "idHistoriaClinica": 21003, "descripcion": "Consulta ginecológica", "tratamiento": "Anticonceptivos orales, parche, métodos hormonales combinados",
+"medicamento": [
+		{"idMedicamento": 17031, "fecha": "2024-05-02", "cantidad": 20},
+		{"idMedicamento": 17032, "fecha": "2024-05-02", "cantidad": 15}
+
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15017, "idMedico": 13007, "idPaciente": 14005, "fecha": "2024-05-02", "hora": "19:00:00", "motivo": "Consulta ginecología", "diagnostico": {"idDiagnostico": 16017, "idHistoriaClinica": 21005, "descripcion": "Consulta ginecológica", "tratamiento": "Implantes subdérmicos, para liberación continua de hormonas.",
+"medicamento": [
+		{"idMedicamento": 17033, "fecha": "2024-05-02", "cantidad": 10},
+		{"idMedicamento": 17034, "fecha": "2024-05-02", "cantidad": 30}
+
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15018, "idMedico": 13008, "idPaciente": 14011, "fecha": "2024-05-01", "hora": "14:00:00", "motivo": "Consulta ginecología", "diagnostico": {"idDiagnostico": 16018, "idHistoriaClinica": 21011, "descripcion": "Consulta ginecológica", "tratamiento": "Monitoreo del embarazo, Ecografías y pruebas de laboratorio.",
+"medicamento": [
+		{"idMedicamento": 17035, "fecha": "2024-05-02", "cantidad": 25},
+		{"idMedicamento": 17036, "fecha": "2024-05-02", "cantidad": 15}
+
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15019, "idMedico": 13008, "idPaciente": 14013, "fecha": "2024-05-01", "hora": "15:00:00", "motivo": "Consulta ginecología", "diagnostico": {"idDiagnostico": 16019, "idHistoriaClinica": 21013, "descripcion": "Consulta ginecológica", "tratamiento": "Suplementos prenatales, ácido fólico, hierro y calcio.",
+"medicamento": [
+		{"idMedicamento": 17037, "fecha": "2024-05-02", "cantidad": 20},
+		{"idMedicamento": 17038, "fecha": "2024-05-02", "cantidad": 10}
+
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15020, "idMedico": 13008, "idPaciente": 14009, "fecha": "2024-05-01", "hora": "18:00:00", "motivo": "Consulta ginecología", "diagnostico": {"idDiagnostico": 16020, "idHistoriaClinica": 21009, "descripcion": "Consulta ginecológica", "tratamiento": "Tratamientos no hormonales, antidepresivos o clonidina para los sofocos", "medicamento": [ 
+	{"idMedicamento": 17039, "fecha": "2024-05-02", "cantidad": 15},
+	{"idMedicamento": 17040, "fecha": "2024-05-02", "cantidad": 25}
+], "servicio": [
+	{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}
+]
+}
+}, 
+
+{"idCita": 15021, "idMedico": 13008, "idPaciente": 14022, "fecha": "2024-05-01", "hora": "19:00:00", "motivo": "Consulta ginecología", "diagnostico":{"idDiagnostico": 16021, "idHistoriaClinica": 21022, "descripcion": "Consulta ginecológica", "tratamiento": "Anticonceptivos hormonales, Para regular el ciclo menstrual.", "medicamento": [{"idMedicamento": 17041, "fecha": "2024-05-02", "cantidad": 30},
+{"idMedicamento": 17042, "fecha": "2024-05-02", "cantidad": 10}
+],
+"servicio": [{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Muestra de tejido"}]}
+},
+
+{"idCita": 15022, "idMedico": 13009, "idPaciente": 14010, "fecha": "2024-05-01", "hora": "08:00:00", "motivo": "Revisión Trauma contundente", "diagnostico": {"idDiagnostico": 16022, "idHistoriaClinica": 21010, "descripcion": "Revisión trauma contundente", "tratamiento": "Medicamentos para el dolor, radiografías", "medicamento": [{"idMedicamento": 17043, "fecha": "2024-05-02", "cantidad": 20},
+{"idMedicamento": 17044, "fecha": "2024-05-02", "cantidad": 15}
+],
+"servicio": [{"idServicio": 18005, "fecha": "2024-05-05", "descripcion": "Resonancia"}]}
+},
+
+{"idCita": 15023, "idMedico": 13009, "idPaciente": 14021, "fecha": "2024-05-02", "hora": "08:00:00", "motivo": "Dolor en el pecho", "diagnostico":{"idDiagnostico": 16023, "idHistoriaClinica": 21021, "descripcion": "Dolor de pecho", "tratamiento": "Reposo e hidratación, tomar una aspirina cada 8 horas", "medicamento": [{"idMedicamento": 17045, "fecha": "2024-05-02", "cantidad": 10},
+{"idMedicamento": 17046, "fecha": "2024-05-02", "cantidad": 25}
+],
+"servicio": [{"idServicio": 18015, "fecha": "2024-05-05", "descripcion": "Electrocardiograma"}]}
+},
+
+{"idCita": 15024, "idMedico": 13009, "idPaciente": 14011, "fecha": "2024-05-02", "hora": "06:00:00", "motivo": "Consulta por esguince", "diagnostico": {"idDiagnostico": 16024, "idHistoriaClinica": 21011, "descripcion": "Consulta por esguince", "tratamiento": "Analgésicos, reposo y vendajes", "medicamento": [{"idMedicamento": 17047, "fecha": "2024-05-02", "cantidad": 20},
+{"idMedicamento": 17048, "fecha": "2024-05-02", "cantidad": 15}
+],
+"servicio": [{"idServicio": 18017, "fecha": "2024-05-05", "descripcion": "Densimetría osea"}]}
+},
+
+{"idCita": 15025, "idMedico": 13009, "idPaciente": 14020, "fecha": "2024-05-03", "hora": "06:00:00", "motivo": "Chequeo general", "diagnostico": {"idDiagnostico": 16025, "idHistoriaClinica": 21020, "descripcion": "Chequeo general", "tratamiento": "Analgésicos y seguimiento", "medicamento": [{"idMedicamento": 17049, "fecha": "2024-05-02", "cantidad": 30},
+{"idMedicamento": 17050, "fecha": "2024-05-02", "cantidad": 10}
+],
+"servicio": []}
+},
+
+{"idCita": 15026, "idMedico": 13009, "idPaciente": 14012, "fecha": "2024-05-03", "hora": "08:00:00", "motivo": "Consulta por una hernia", "diagnostico":{"idDiagnostico": 16026, "idHistoriaClinica": 21012, "descripcion": "Consulta por una hernia", "tratamiento": "Cirugía y Medicamentos", "medicamento": [{"idMedicamento": 17051, "fecha": "2024-05-02", "cantidad": 15},
+{"idMedicamento": 17052, "fecha": "2024-05-02", "cantidad": 25}
+],
+"servicio": [{"idServicio": 18011, "fecha": "2024-05-05", "descripcion": "Ecografía abdominal"}]}
+},
+
+{"idCita": 15027, "idMedico": 13009, "idPaciente": 14019, "fecha": "2024-05-03", "hora": "09:00:00", "motivo": "Dolor de rodilla", "diagnostico":{"idDiagnostico": 16027, "idHistoriaClinica": 21019, "descripcion": "Dolor de rodilla", "tratamiento": "Fisioterapia y posible cirugía", "medicamento": [{"idMedicamento": 17053, "fecha": "2024-05-02", "cantidad": 20},
+{"idMedicamento": 17054, "fecha": "2024-05-02", "cantidad": 10}
+],
+"servicio": [{"idServicio": 18001, "fecha": "2024-05-05", "descripcion": "Radiografía"}]}
+},
+
+{"idCita": 15028, "idMedico": 13009, "idPaciente": 14013, "fecha": "2024-05-03", "hora": "10:00:00", "motivo": "Chequeo prenatal", "diagnostico":{"idDiagnostico": 16028, "idHistoriaClinica": 21013, "descripcion": "Chequeo prenatal", "tratamiento": "Ecografía", "medicamento": [{ "idMedicamento": 17055, "fecha": "2024-05-02", "cantidad": 30},
+{"idMedicamento": 17056, "fecha": "2024-05-02", "cantidad": 15}
+],
+"servicio": [{"idServicio": 18018, "fecha": "2024-05-05", "descripcion": "Consulta general prenatal"}]}
+},
+
+{"idCita": 15029, "idMedico": 13009, "idPaciente": 14018, "fecha": "2024-05-03", "hora": "11:00:00", "motivo": "Consulta de seguimiento", "diagnostico": {"idDiagnostico": 16029, "idHistoriaClinica": 21018, "descripcion": "Consulta de seguimiento", "tratamiento": "Antiinflamatorios y dieta baja en purinas", "medicamento": [{"idMedicamento": 17057, "fecha": "2024-05-02", "cantidad": 25},
+{"idMedicamento": 17058, "fecha": "2024-05-02", "cantidad": 10}
+],
+"servicio": [{"idServicio": 18009, "fecha": "2024-05-05", "descripcion": "Endoscopia"}
+]}
+},
+
+{"idCita": 15030, "idMedico": 13009, "idPaciente": 14014, "fecha": "2024-05-03", "hora": "13:00:00", "motivo": "Dolor de rodilla", "diagnostico": {"idDiagnostico": 16030, "idHistoriaClinica": 21014, "descripcion": "Dolor de rodilla", "tratamiento": "Fisioterapia y posible cirugía", "medicamento": [{"idMedicamento": 17059, "fecha": "2024-05-02", "cantidad": 20},
+{"idMedicamento": 17060, "fecha": "2024-05-02", "cantidad": 15}
+],
+"servicio": [{"idServicio": 18001, "fecha": "2024-05-05", "descripcion": "Radiografía"}]}
+},
+
+{"idCita": 15031, "idMedico": 13009, "idPaciente": 14017, "fecha": "2024-05-04", "hora": "09:00:00", "motivo": "Revisión de artrosis", "diagnostico": {"idDiagnostico": 16031, "idHistoriaClinica": 21017, "descripcion": "Revisión de artrosis", "tratamiento": "Antiinflamatorios y ejercicio continuo", "medicamento": [{"idMedicamento": 17061, "fecha": "2024-05-02", "cantidad": 10},
+{"idMedicamento": 17062, "fecha": "2024-05-02", "cantidad": 30}
+],
+"servicio": [{"idServicio": 18017, "fecha": "2024-05-05", "descripcion": "Densimetría ósea"}]}
+},
+
+{"idCita": 15032, "idMedico": 13009, "idPaciente": 14015, "fecha": "2024-05-05", "hora": "08:00:00", "motivo": "Consulta por fractura", "diagnostico": {"idDiagnostico": 16032, "idHistoriaClinica": 21015, "descripcion": "Consulta por fractura", "tratamiento": "Cirugía y Antiinflamatorios", "medicamento": [{"idMedicamento": 17063, "fecha": "2024-05-03", "cantidad": 25},
+{"idMedicamento": 17064, "fecha": "2024-05-03", "cantidad": 15}
+],
+"servicio": [{"idServicio": 18013, "fecha": "2024-05-05", "descripcion": "Resonancia"}]}
+},
+
+{"idCita": 15033, "idMedico": 13010, "idPaciente": 14016, "fecha": "2024-05-02", "hora": "10:00:00", "motivo": "Chequeo ocular", "diagnostico": {"idDiagnostico": 16033, "idHistoriaClinica": 21016, "descripcion": "Chequeo ocular", "tratamiento": "Retinografía y revisión oftalmológica", "medicamento":[
+	{"idMedicamento": 17065, "fecha": "2024-05-03", "cantidad": 20},
+	{"idMedicamento": 17066, "fecha": "2024-05-03", "cantidad": 10}
+], "servicio": [
+	{"idServicio": 18002, "fecha": "2024-05-05", "descripcion": "Laboratorio de sangre"}
+]}},
+
+{"idCita": 15034, "idMedico": 13010, "idPaciente": 14030, "fecha": "2024-05-04", "hora": "15:00:00", "motivo": "Consulta ocular", "diagnostico": {"idDiagnostico": 16034, "idHistoriaClinica": 21030, "descripcion": "Consulta ocular", "tratamiento": "Retinografía y revisión oftalmológica", "medicamento":[
+	{"idMedicamento": 17067, "fecha": "2024-05-03", "cantidad": 30},
+	{"idMedicamento": 17068, "fecha": "2024-05-03", "cantidad": 15}
+], "servicio": [
+	{"idServicio": 18002, "fecha": "2024-05-05", "descripcion": "Análisis pre-revisión"}
+]}}, 
+
+{"idCita": 15035, "idMedico": 13011, "idPaciente": 14031, "fecha": "2024-05-01", "hora": "06:00:00", "motivo": "Quimioterapia", "diagnostico": {"idDiagnostico": 16035, "idHistoriaClinica": 21031, "descripcion": "Quimioterapia", "tratamiento": "Cuidados paliativos", "medicamento":[], "servicio": []}},
+
+{"idCita": 15036, "idMedico": 13011, "idPaciente": 14032, "fecha": "2024-05-02", "hora": "10:00:00", "motivo": "Quimioterapia", "diagnostico": {"idDiagnostico": 16036, "idHistoriaClinica": 21032, "descripcion": "Quimioterapia", "tratamiento": "Cuidados paliativos", "medicamento":[], "servicio": []}},
+
+{"idCita": 15037, "idMedico": 13011, "idPaciente": 14033, "fecha": "2024-05-03", "hora": "14:00:00", "motivo": "Quimioterapia", "diagnostico": {"idDiagnostico": 16037, "idHistoriaClinica": 21033, "descripcion": "Quimioterapia", "tratamiento": "Descanso eterno", "medicamento":[], "servicio": []}},
+
+{"idCita": 15038, "idMedico": 13011, "idPaciente": 14034, "fecha": "2024-05-04", "hora": "18:00:00", "motivo": "Quimioterapia", "diagnostico": {"idDiagnostico": 16038, "idHistoriaClinica": 21034, "descripcion": "Quimioterapia", "tratamiento": "Conocer a san Pedro", "medicamento":[], "servicio": []}},
+
+{"idCita": 15039, "idMedico": 13012, "idPaciente": 14035, "fecha": "2024-05-02", "hora": "14:00:00", "motivo": "Radioterapia", "diagnostico": {"idDiagnostico": 16039, "idHistoriaClinica": 21035, "descripcion": "Radioterapia", "tratamiento": "Cuidados paliativos", "medicamento":[], "servicio": []}},
+
+{"idCita": 15040, "idMedico": 13012, "idPaciente": 14036, "fecha": "2024-05-03", "hora": "18:00:00", "motivo": "Radioterapia", "diagnostico": {"idDiagnostico": 16040, "idHistoriaClinica": 21036, "descripcion": "Radioterapia", "tratamiento": "Descanso y alimentación saludable", "medicamento":[
+	{"idMedicamento": 17009, "fecha": "2024-05-03", "cantidad": 15},
+	{"idMedicamento": 17010, "fecha": "2024-05-03", "cantidad": 25}
+], "servicio": []}},
+
+{"idCita": 15041, "idMedico": 13012, "idPaciente": 14037, "fecha": "2024-05-04", "hora": "06:00:00", "motivo": "Radioterapia", "diagnostico": {"idDiagnostico": 16041, "idHistoriaClinica": 21037, "descripcion": "Radioterapia", "tratamiento": "Descanso eterno", "medicamento":[], "servicio": []}},
+
+{"idCita": 15042, "idMedico": 13012, "idPaciente": 14038, "fecha": "2024-05-05", "hora": "10:00:00", "motivo": "Radioterapia", "diagnostico": {"idDiagnostico": 16042, "idHistoriaClinica": 21038, "descripcion": "Radioterapia", "tratamiento": "Antibióticos y analgésicos", "medicamento":[
+	{"idMedicamento": 17013, "fecha": "2024-05-03", "cantidad": 20},
+	{"idMedicamento": 17014, "fecha": "2024-05-03", "cantidad": 15}
+], "servicio": []}},
+
+{"idCita": 15043, "idMedico": 13012, "idPaciente": 14039, "fecha": "2024-05-04", "hora": "17:00:00", "motivo": "Dolor de cabeza recurrente", "diagnostico": {"idDiagnostico": 16043, "idHistoriaClinica": 21039, "descripcion": "Dolor de cabeza recurrente", "tratamiento": "Compresas calientes y analgésicos", "medicamento":[
+	{"idMedicamento": 17015, "fecha": "2024-05-03", "cantidad": 10},
+	{"idMedicamento": 17016, "fecha": "2024-05-03", "cantidad": 25}
+], "servicio": [
+	{"idServicio": 18006, "fecha": "2024-05-05", "descripcion": "Electroencéfalograma"}
+]}},
+
+{"idCita": 15044, "idMedico": 13013, "idPaciente": 14040, "fecha": "2024-05-04", "hora": "07:00:00", "motivo": "Consulta general", "diagnostico": {"idDiagnostico": 16044, "idHistoriaClinica": 21040, "descripcion": "Consulta general", "tratamiento": "Cremas tópicas y antibióticos", "medicamento":[
+	{"idMedicamento": 17017, "fecha": "2024-05-03", "cantidad": 20},
+	{"idMedicamento": 17018, "fecha": "2024-05-03", "cantidad": 15}
+], "servicio": []}},
+
+{"idCita": 15045, "idMedico": 13013, "idPaciente": 14041, "fecha": "2024-05-05", "hora": "08:00:00", "motivo": "Chequeo general", "diagnostico": {"idDiagnostico": 16045, "idHistoriaClinica": 21041, "descripcion": "Chequeo general", "tratamiento": "Analgésicos y seguimiento", "medicamento":[
+	{"idMedicamento": 17019, "fecha": "2024-05-03", "cantidad": 30},
+	{"idMedicamento": 17020, "fecha": "2024-05-03", "cantidad": 10}
+], "servicio": []}}, 
+
+{"idCita": 15046, "idMedico": 13013, "idPaciente": 14042, "fecha": "2024-05-05", "hora": "09:00:00", "motivo": "Consulta general", "diagnostico": {"idDiagnostico": 16046, "idHistoriaClinica": 21042, "descripcion": "Consulta general", "tratamiento": "analgésicos y seguimiento endocrinológico", "medicamento":[
+	{"idMedicamento": 17021, "fecha": "2024-05-03", "cantidad": 15},
+	{"idMedicamento": 17022, "fecha": "2024-05-03", "cantidad": 25}
+], "servicio": []}},
+
+{"idCita": 15047, "idMedico": 13013, "idPaciente": 14043, "fecha": "2024-05-05", "hora": "10:00:00", "motivo": "Revisión de colesterol", "diagnostico": {"idDiagnostico": 16047, "idHistoriaClinica": 21043, "descripcion": "Revisión de colesterol", "tratamiento": "Ejercicio y alimentación saludable", "medicamento":[
+	{"idMedicamento": 17023, "fecha": "2024-05-03", "cantidad": 20},
+	{"idMedicamento": 17024, "fecha": "2024-05-03", "cantidad": 10}
+], "servicio": [
+	{"idServicio": 18002, "fecha": "2024-05-05", "descripcion": "Análisis de sangre"}
+]}},
+
+{"idCita": 15048, "idMedico": 13013, "idPaciente": 14044, "fecha": "2024-05-05", "hora": "11:00:00", "motivo": "Consulta por alergias", "diagnostico": {"idDiagnostico": 16048, "idHistoriaClinica": 21044, "descripcion": "Consulta por alergias", "tratamiento": "Medicamentos e inmunoterapia", "medicamento":[
+	{"idMedicamento": 17025, "fecha": "2024-05-03", "cantidad": 30},
+	{"idMedicamento": 17026, "fecha": "2024-05-03", "cantidad": 15}
+], "servicio": []
+}},
+
+{"idCita": 15049, "idMedico": 13013, "idPaciente": 14045, "fecha": "2024-05-05", "hora": "12:00:00", "motivo": "Chequeo de rutina", "diagnostico": {"idDiagnostico": 16049, "idHistoriaClinica": 21045, "descripcion": "Chequeo de rutina", "tratamiento": "Dieta, ejercicio y medicamentos", "medicamento":[
+	{"idMedicamento": 17027, "fecha": "2024-05-03", "cantidad": 25},
+	{"idMedicamento": 17028, "fecha": "2024-05-03", "cantidad": 10}
+], "servicio": []}
+},
+
+{"idCita": 15050, "idMedico": 13014, "idPaciente": 14046, "fecha": "2024-05-01", "hora": "16:00:00", "motivo": "Dolor de estómago", "diagnostico": {"idDiagnostico": 16050, "idHistoriaClinica": 21046, "descripcion": "Dolor de estómago", "tratamiento": "Antibióticos y analgésicos", "medicamento":[
+	{"idMedicamento": 17029, "fecha": "2024-05-03", "cantidad": 20},
+	{"idMedicamento": 17030, "fecha": "2024-05-03", "cantidad": 15}
+], "servicio": [
+	{"idServicio": 18011, "fecha": "2024-05-05", "descripcion": "Ecografía abdominal"}
+]}},
+
+{"idCita": 15051, "idMedico": 13014, "idPaciente": 14047, "fecha": "2024-05-02", "hora": "05:00:00", "motivo": "Control de peso", "diagnostico":{"idDiagnostico": 16051, "idHistoriaClinica": 21047, "descripcion": "Control de peso", "tratamiento": "Consumir frutas y bastante agua", "medicamento": [
+	{"idMedicamento": 17031, "fecha": "2024-05-04", "cantidad": 10},
+	{"idMedicamento": 17032, "fecha": "2024-05-04", "cantidad": 30}
+], "servicio": []}},
+
+{"idCita": 15052, "idMedico": 13014, "idPaciente": 14048, "fecha": "2024-05-02", "hora": "22:00:00", "motivo": "Revisión ocular", "diagnostico": {"idDiagnostico": 16052, "idHistoriaClinica": 21048, "descripcion": "Revisión ocular", "tratamiento": "Aplicar gotas cada 8 horas y revisión con el optómetra", "medicamento": [
+	{"idMedicamento": 17033, "fecha": "2024-05-04", "cantidad": 25},
+	{"idMedicamento": 17034, "fecha": "2024-05-04", "cantidad": 15}
+], "servicio": [
+	{"idServicio": 18002, "fecha": "2024-05-05", "descripcion": "Prueba ETS pre-tratamiento"}
+]}},
+
+{"idCita": 15053, "idMedico": 13014, "idPaciente": 14049, "fecha": "2024-05-04", "hora": "17:00:00", "motivo": "Dolor en el pecho", "diagnostico": {"idDiagnostico": 16053, "idHistoriaClinica": 21049, "descripcion": "Dolor en el pecho", "tratamiento": "Reposo e hidratación, tomar una aspirina cada 8 horas", "medicamento": [
+	{"idMedicamento": 17035, "fecha": "2024-05-04", "cantidad": 20},
+	{"idMedicamento": 17036, "fecha": "2024-05-04", "cantidad": 10}
+], "servicio": [
+	{"idServicio": 18001, "fecha": "2024-05-05", "descripcion": "Radiografía de tórax"}
+]}},
+
+{"idCita": 15054, "idMedico": 13015, "idPaciente": 14050, "fecha": "2024-05-05", "hora": "15:00:00", "motivo": "Consulta dermatológica", "diagnostico": {"idDiagnostico": 16054, "idHistoriaClinica": 21050,"descripcion": "Consulta dermatológica", "tratamiento": "Tópicos, peróxido de benzoilo, retinoides", "medicamento": [
+	{"idMedicamento": 17037, "fecha": "2024-05-04", "cantidad": 15},
+	{"idMedicamento": 17038, "fecha": "2024-05-04", "cantidad": 25}
+], "servicio": [
+	{"idServicio": 18010, "fecha": "2024-05-05", "descripcion": "Biopsia de piel"}
+]}
+}

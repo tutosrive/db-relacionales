@@ -1,0 +1,149 @@
+{"idPaciente": 14001, "idEps": 6001, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Ana", "apellidos": "Martinez", "edad": 30, "genero": "Femenino", "telefono": "+573112345678", "direccion": "Calle 123", "correo": "ana.martinez@example.com", "historiaClinica": {"idHistoriaClinica": 21001, "fecha_creacion": "2010-05-15"}
+},
+
+{"idPaciente": 14002, "idEps": 6002, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Luis", "apellidos": "Gomez", "edad": 45, "genero": "Masculino", "telefono": "+573212345679", "direccion": "Avenida 456", "correo": "luis.gomez@example.com", "historiaClinica": {"idHistoriaClinica": 21002, "fecha_creacion": "2012-06-20"}
+},
+
+{"idPaciente": 14003, "idEps": 6003, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Maria", "apellidos": "Rodriguez", "edad": 28, "genero": "Femenino", "telefono": "+573501234567", "direccion": "Calle 789", "correo": "maria.rodriguez@example.com", "historiaClinica": {"idHistoriaClinica": 21003, "fecha_creacion": "2011-07-25"}
+},
+
+{"idPaciente": 14004, "idEps": 6004, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Carlos", "apellidos": "Lopez", "edad": 35, "genero": "Masculino", "telefono": "+573112345680", "direccion": "Avenida 012", "correo": "carlos.lopez@example.com", "historiaClinica": {"idHistoriaClinica": 21004,  "fecha_creacion": "2013-08-30"}
+},
+
+{"idPaciente": 14005, "idEps": 6005, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Sofia", "apellidos": "Hernandez", "edad": 22, "genero": "Femenino", "telefono": "+573212345681", "direccion": "Calle 345", "correo": "sofia.hernandez@example.com", "historiaClinica": {"idHistoriaClinica": 21005, "fecha_creacion": "2014-09-10"}
+},
+
+{"idPaciente": 14006, "idEps": 6001, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "David", "apellidos": "Perez", "edad": 40, "genero": "Masculino", "telefono": "+573501234568", "direccion": "Avenida 678", "correo": "david.perez@example.com", "historiaClinica": {"idHistoriaClinica": 21006, "fecha_creacion": "2010-10-15"}
+},
+
+{"idPaciente": 14007, "idEps": 6002, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Laura", "apellidos": "Gonzalez", "edad": 50, "genero": "Femenino", "telefono": "+573112345682", "direccion": "Calle 901", "correo": "laura.gonzalez@example.com", "historiaClinica": {"idHistoriaClinica": 21007, "fecha_creacion": "2011-11-20"}
+},
+
+{"idPaciente": 14008, "idEps": 6003, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Miguel", "apellidos": "Ramirez", "edad": 33, "genero": "Masculino", "telefono": "+573212345683", "direccion": "Avenida 234", "correo": "miguel.ramirez@example.com", "historiaClinica": {"idHistoriaClinica": 21008, "fecha_creacion": "2012-12-25"}
+},
+
+{"idPaciente": 14009, "idEps": 6004, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Paula", "apellidos": "Torres", "edad": 29, "genero": "Femenino", "telefono": "+573501234569", "direccion": "Calle 567", "correo": "paula.torres@example.com", "historiaClinica": {"idHistoriaClinica": 21009, "fecha_creacion": "2013-01-05"}
+},
+
+{"idPaciente": 14010, "idEps": 6005, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Juan", "apellidos": "Diaz", "edad": 55, "genero": "Masculino", "telefono": "+573112345684", "direccion": "Avenida 890", "correo": "juan.diaz@example.com", "historiaClinica": {"idHistoriaClinica": 21010, "fecha_creacion": "2014-02-10"}
+},
+
+{"idPaciente": 14011, "idEps": 6001, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Lucia", "apellidos": "Moreno", "edad": 27, "genero": "Femenino", "telefono": "+573212345685", "direccion": "Calle 123", "correo": "lucia.moreno@example.com", "historiaClinica": {"idHistoriaClinica": 21011, "fecha_creacion": "2010-03-15"}
+},
+
+{"idPaciente": 14012, "idEps": 6002, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Pedro", "apellidos": "Vargas", "edad": 38, "genero": "Masculino", "telefono": "+573501234570", "direccion": "Avenida 456", "correo": "pedro.vargas@example.com", "historiaClinica": {"idHistoriaClinica": 21012, "fecha_creacion": "2011-04-20"}
+},
+
+{"idPaciente": 14013, "idEps": 6003, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Isabel", "apellidos": "Cruz", "edad": 26, "genero": "Femenino", "telefono": "+573112345686", "direccion": "Calle 789", "correo": "isabel.cruz@example.com", "historiaClinica": {"idHistoriaClinica": 21013, "fecha_creacion": "2012-05-25"}
+},
+
+{"idPaciente": 14014, "idEps": 6004, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Fernando", "apellidos": "Ortega", "edad": 47, "genero": "Masculino", "telefono": "+573212345687", "direccion": "Avenida 012", "correo": "fernando.ortega@example.com", "historiaClinica": {"idHistoriaClinica": 21014, "fecha_creacion": "2013-06-30"}
+},
+
+{"idPaciente": 14015, "idEps": 6005, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Patricia", "apellidos": "Castillo", "edad": 31, "genero": "Femenino", "telefono": "+573501234571", "direccion": "Carrera 15A", "correo": "patricia.castillo@example.com", "historiaClinica": {"idHistoriaClinica": 21015, "fecha_creacion": "2014-07-10"}
+},
+
+{"idPaciente": 14016, "idEps": 6001, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Andres", "apellidos": "Ruiz", "edad": 36, "genero": "Masculino", "telefono": "+573112345688", "direccion": "Avenida 678", "correo": "andres.ruiz@example.com", "historiaClinica": {"idHistoriaClinica": 21016, "fecha_creacion": "2010-08-15"}
+},
+
+{"idPaciente": 14017, "idEps": 6002, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Valeria", "apellidos": "Jimenez", "edad": 24, "genero": "Femenino", "telefono": "+573212345689", "direccion": "Calle 901", "correo": "valeria.jimenez@example.com", "historiaClinica": {"idHistoriaClinica": 21017, "fecha_creacion": "2011-09-20"}
+},
+
+{"idPaciente": 14018, "idEps": 6003, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Jorge", "apellidos": "Paz", "edad": 53, "genero": "Masculino", "telefono": "+573501234572", "direccion": "Avenida 234", "correo": "jorge.paz@example.com", "historiaClinica": {"idHistoriaClinica": 21018,  "fecha_creacion": "2012-10-25"}
+},
+
+{"idPaciente": 14019, "idEps": 6004, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Carolina", "apellidos": "Rojas", "edad": 42, "genero": "Femenino", "telefono": "+573112345690", "direccion": "Calle 567", "correo": "carolina.rojas@example.com", "historiaClinica": {"idHistoriaClinica": 21019, "fecha_creacion": "2013-11-05"}
+},
+
+{"idPaciente": 14020, "idEps": 6005, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Diego", "apellidos": "Mendez", "edad": 34, "genero": "Masculino", "telefono": "+573212345691", "direccion": "Carrera 8", "correo": "diego.mendez@example.com", "historiaClinica": {"idHistoriaClinica": 21020,  "fecha_creacion": "2014-12-10"}
+},
+
+{"idPaciente": 14021, "idEps": 6001, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Camila", "apellidos": "Salazar", "edad": 30, "genero": "Femenino", "telefono": "+573501234573", "direccion": "Transversal sur", "correo": "camila.salazar@example.com", "historiaClinica": {"idHistoriaClinica": 21021, "fecha_creacion": "2010-01-15"}
+},
+
+{"idPaciente": 14022, "idEps": 6002, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Adrian", "apellidos": "Guerrero", "edad": 28, "genero": "Masculino", "telefono": "+573112345692", "direccion": "Avenida 456", "correo": "adrian.guerrero@example.com", "historiaClinica": {"idHistoriaClinica": 21022, "fecha_creacion": "2011-02-20"}
+},
+
+{"idPaciente": 14023, "idEps": 6003, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Natalia", "apellidos": "Ramirez", "edad": 39, "genero": "Femenino", "telefono": "+573212345693", "direccion": "Calle 789", "correo": "natalia.ramirez@example.com", "historiaClinica": {"idHistoriaClinica": 21023, "fecha_creacion": "2012-03-25"}
+},
+
+{"idPaciente": 14024, "idEps": 6004, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Oscar", "apellidos": "Herrera", "edad": 48, "genero": "Masculino", "telefono": "+573501234574", "direccion": "Avenida 012", "correo": "oscar.herrera@example.com", "historiaClinica": {"idHistoriaClinica": 21024, "fecha_creacion": "2013-04-30"}
+},
+
+{"idPaciente": 14025, "idEps": 6005, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Sandra", "apellidos": "Vargas", "edad": 25, "genero": "Femenino", "telefono": "+573112345694", "direccion": "Calle 345", "correo": "sandra.vargas@example.com", "historiaClinica": {"idHistoriaClinica": 21025, "fecha_creacion": "2014-05-10"}
+},
+
+{"idPaciente": 14026, "idEps": 6001, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Enrique", "apellidos": "Rios", "edad": 37, "genero": "Masculino", "telefono": "+573212345695", "direccion": "Avenida 678", "correo": "enrique.rios@example.com", "historiaClinica": {"idHistoriaClinica": 21026, "fecha_creacion": "2010-06-15"}
+},
+
+{"idPaciente": 14027, "idEps": 6002, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Marta", "apellidos": "Nunez", "edad": 44, "genero": "Femenino", "telefono": "+573501234575", "direccion": "Avenida 890", "correo": "marta.nunez@example.com", "historiaClinica": {"idHistoriaClinica": 21027, "fecha_creacion": "2011-07-20"}
+},
+
+{"idPaciente": 14028, "idEps": 6003, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Ricardo", "apellidos": "Reyes", "edad": 29, "genero": "Masculino", "telefono": "+573112345696", "direccion": "Avenida 234", "correo": "ricardo.reyes@example.com", "historiaClinica": {"idHistoriaClinica": 21028, "fecha_creacion": "2012-08-25"}
+},
+
+{"idPaciente": 14029, "idEps": 6004, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Angela", "apellidos": "Medina", "edad": 41, "genero": "Femenino", "telefono": "+573212345697", "direccion": "Calle 567", "correo": "angela.medina@example.com", "historiaClinica": {"idHistoriaClinica": 21029, "fecha_creacion": "2013-09-05"}
+},
+
+{"idPaciente": 14030, "idEps": 6005, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Sebastian", "apellidos": "Vera", "edad": 33, "genero": "Masculino", "telefono": "+573501234576", "direccion": "Avenida 890", "correo": "sebastian.vera@example.com", "historiaClinica": {"idHistoriaClinica": 21030, "fecha_creacion": "2014-10-10"}},
+
+{"idPaciente": 14031, "idEps": 6001, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Martín", "apellidos": "Cruz", "edad": 45, "genero": "Masculino", "telefono": "+573207651234", "direccion": "Calle 60 #5-45, Medellín", "correo": "martin.cruz@gmail.com", "historiaClinica": {"idHistoriaClinica": 21031, "fecha_creacion": "2016-12-15"}
+},
+
+{"idPaciente": 14032, "idEps": 6002, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Camila", "apellidos": "Rojas", "edad": 28, "genero": "Femenino", "telefono": "+573208765432", "direccion": "Carrera 30 #8-90, Bogotá", "correo": "camila.rojas@yahoo.com", "historiaClinica": {"idHistoriaClinica": 21032, "fecha_creacion": "2016-11-20"}
+},
+
+{"idPaciente": 14033, "idEps": 6003, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Esteban", "apellidos": "Vargas", "edad": 32, "genero": "Masculino", "telefono": "+573108761234", "direccion": "Avenida 15 #50-34, Cali", "correo": "esteban.vargas@hotmail.com", "historiaClinica": {"idHistoriaClinica": 21033, "fecha_creacion": "2016-10-05"}
+},
+
+{"idPaciente": 14034, "idEps": 6004, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Valentina", "apellidos": "Torres", "edad": 21, "genero": "Femenino", "telefono": "+573127654321", "direccion": "Calle 100 #10-30, Cartagena", "correo": "valentina.torres@outlook.com", "historiaClinica": {"idHistoriaClinica": 21034, "fecha_creacion": "2016-09-10"}
+},
+
+{"idPaciente": 14035, "idEps": 6001, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Santiago", "apellidos": "Mendoza", "edad": 60, "genero": "Masculino", "telefono": "+573116547890", "direccion": "Carrera 80 #20-10, Barranquilla", "correo": "santiago.mendoza@gmail.com", "historiaClinica": {"idHistoriaClinica": 21035, "fecha_creacion": "2016-08-15"}
+},
+
+{"idPaciente": 14036, "idEps": 6002, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Paula", "apellidos": "Martínez", "edad": 35, "genero": "Femenino", "telefono": "+573209876543", "direccion": "Calle 45 #6-78, Bucaramanga", "correo": "paula.martinez@yahoo.com", "historiaClinica": {"idHistoriaClinica": 21036, "fecha_creacion": "2016-07-20"}
+},
+
+{"idPaciente": 14037, "idEps": 6003, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Carlos", "apellidos": "López", "edad": 47, "genero": "Masculino", "telefono": "+573105671234", "direccion": "Carrera 55 #10-20, Pereira", "correo": "carlos.lopez@hotmail.com", "historiaClinica": {"idHistoriaClinica": 21037, "fecha_creacion": "2016-06-25"}
+},
+
+{"idPaciente": 14038, "idEps": 6004, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Ana", "apellidos": "García", "edad": 29, "genero": "Femenino", "telefono": "+573128761234", "direccion": "Avenida 9 #30-15, Manizales", "correo": "ana.garcia@outlook.com", "historiaClinica": {"idHistoriaClinica": 21038, "fecha_creacion": "2016-05-30"}
+},
+
+{"idPaciente": 14039, "idEps": 6005, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Luis", "apellidos": "Gómez", "edad": 50, "genero": "Masculino", "telefono": "+573119876543", "direccion": "Calle 80 #50-25, Ibagué", "correo": "luis.gomez@gmail.com", "historiaClinica": {"idHistoriaClinica": 21039, "fecha_creacion": "2016-04-04"}
+},
+
+{"idPaciente": 14040, "idEps": 6005, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Laura", "apellidos": "Ramírez", "edad": 33, "genero": "Femenino", "telefono": "+573206543210", "direccion": "Carrera 100 #20-30, Santa Marta", "correo": "laura.ramirez@yahoo.com", "historiaClinica": {"idHistoriaClinica": 21040, "fecha_creacion": "2016-03-09"}
+},
+
+{"idPaciente": 14041, "idEps": 6003, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Fernando", "apellidos": "Díaz", "edad": 38, "genero": "Masculino", "telefono": "+573108765432", "direccion": "Calle 70 #40-45, Villavicencio", "correo": "fernando.diaz@hotmail.com", "historiaClinica": {"idHistoriaClinica": 21041, "fecha_creacion": "2016-02-14"}
+},
+
+{"idPaciente": 14042, "idEps": 6004, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Carolina", "apellidos": "Suárez", "edad": 27, "genero": "Femenino", "telefono": "+573127651234", "direccion": "Carrera 60 #10-50, Pasto", "correo": "carolina.suarez@outlook.com", "historiaClinica": {"idHistoriaClinica": 21042, "fecha_creacion": "2016-01-19"}
+},
+
+{"idPaciente": 14043, "idEps": 6005, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Ricardo", "apellidos": "Castillo", "edad": 52, "genero": "Masculino", "telefono": "+573116543210", "direccion": "Avenida 25 #80-34, Popayán", "correo": "ricardo.castillo@gmail.com", "historiaClinica": {"idHistoriaClinica": 21043, "fecha_creacion": "2015-12-24"}
+},
+
+{"idPaciente": 14044, "idEps": 6002, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "María", "apellidos": "Peña", "edad": 41, "genero": "Femenino", "telefono": "+573209876543", "direccion": "Calle 90 #10-20, Armenia", "correo": "maria.pena@yahoo.com", "historiaClinica": {"idHistoriaClinica": 21044, "fecha_creacion": "2015-11-29"}
+},
+
+{"idPaciente": 14045, "idEps": 6003, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Jorge", "apellidos": "Morales", "edad": 46, "genero": "Masculino", "telefono": "+573107654321", "direccion": "Carrera 45 #20-30, Neiva", "correo": "jorge.morales@hotmail.com", "historiaClinica": {"idHistoriaClinica": 21045, "fecha_creacion": "2015-10-04"}
+},
+
+{"idPaciente": 14046, "idEps": 6005, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Andrea", "apellidos": "Ortiz", "edad": 24, "genero": "Femenino", "telefono": "+573128765432", "direccion": "Avenida 70 #50-10, Montería", "correo": "andrea.ortiz@outlook.com", "historiaClinica": {"idHistoriaClinica": 21046, "fecha_creacion": "2015-09-09"}
+},
+
+{"idPaciente": 14047, "idEps": 6001, "planSalud": {"idPlanSalud": 19001, "precio": 50000, "tipo": "Básico"}, "nombre": "Sebastián", "apellidos": "Pérez", "edad": 34, "genero": "Masculino", "telefono": "+573117654321", "direccion": "Calle 20 #30-45, Sincelejo", "correo": "sebastian.perez@gmail.com", "historiaClinica": {"idHistoriaClinica": 21047, "fecha_creacion": "2015-08-14"}
+},
+
+{"idPaciente": 14048, "idEps": 6005, "planSalud": {"idPlanSalud": 19002, "precio": 80000, "tipo": "Estándar"}, "nombre": "Natalia", "apellidos": "Jiménez", "edad": 39, "genero": "Femenino", "telefono": "+573208765432", "direccion": "Carrera 70 #40-20, Cúcuta", "correo": "natalia.jimenez@yahoo.com", "historiaClinica": {"idHistoriaClinica": 21048, "fecha_creacion": "2015-07-19"}
+},
+
+{"idPaciente": 14049, "idEps": 6003, "planSalud": {"idPlanSalud": 19003, "precio": 120000, "tipo": "Premium"}, "nombre": "Pedro", "apellidos": "Rivas", "edad": 55, "genero": "Masculino", "telefono": "+573107651234", "direccion": "Calle 50 #30-15, Tunja", "correo": "pedro.rivas@hotmail.com", "historiaClinica": {"idHistoriaClinica": 21049, "fecha_creacion": "2015-06-24"}
+},
+
+{"idPaciente": 14050, "idEps": 6005, "planSalud": {"idPlanSalud": 19004, "precio": 100000, "tipo": "Familiar"}, "nombre": "Sofía", "apellidos": "Herrera", "edad": 30, "genero": "Femenino", "telefono": "+573126547890", "direccion": "Avenida 100 #10-25, Florencia", "correo": "sofia.herrera@outlook.com", "historiaClinica": {"idHistoriaClinica": 21050, "fecha_creacion": "2015-05-29"}
+}
+

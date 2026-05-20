@@ -1,0 +1,153 @@
+
+--- Script consecionario
+
+Se va a crear una pequena base de datos con el tema de consecionario
+permite agregar datos y estudiar los conceptos basicos de la materia de bases II
+
+--- ENTIDADES 
+
+1. CLIENTES → Información de los clientes.
+2. VEHICULOS → Información de los autos en venta.
+3. VENTAS → Registro de las ventas realizadas.
+4. VENDEDORES → Información de los empleados que venden autos.
+
+--- INTEGRIDAD REFERENCIAL
+Es importante que se tomen encuentan los conceptos basicos sobre el funcionamiento de una base de datos,
+en este caso debe tener presente la logica referencial de las entidades y sus atributos 
+para el adecuado segumiendo de los datos y el acceso a estos mismos.
+
+---- CREACION DE LA TABLAS EN ORACLE
+
+-- ==========================
+-- INSERCIÓN DE LAS TABLAS
+-- ==========================
+
+
+--- CLIENTE 
+
+CREATE TABLE CLIENTES (
+    ID_CLIENTE NUMBER PRIMARY KEY,
+    NOMBRE VARCHAR2(100) NOT NULL,
+    TELEFONO VARCHAR2(20),
+    EMAIL VARCHAR2(100) UNIQUE
+);
+
+--- VEHICULOS
+
+CREATE TABLE VEHICULOS (
+    ID_VEHICULO NUMBER PRIMARY KEY,
+    MARCA VARCHAR2(50) NOT NULL,
+    MODELO VARCHAR2(50) NOT NULL,
+    ANIO NUMBER(4) NOT NULL,
+    PRECIO NUMBER(10,2) NOT NULL,
+    DISPONIBLE CHAR(1) DEFAULT 'S' CHECK (DISPONIBLE IN ('S', 'N')) 
+);
+
+--- VENDEDORES
+
+CREATE TABLE VENDEDORES (
+    ID_VENDEDOR NUMBER PRIMARY KEY,
+    NOMBRE VARCHAR2(100) NOT NULL,
+    COMISION NUMBER(5,2) DEFAULT 0 -- Porcentaje de comisión sobre las ventas
+);
+
+
+--- VENTAS
+
+CREATE TABLE VENTAS (
+    ID_VENTA NUMBER PRIMARY KEY,
+    ID_CLIENTE NUMBER REFERENCES CLIENTES(ID_CLIENTE),
+    ID_VEHICULO NUMBER REFERENCES VEHICULOS(ID_VEHICULO),
+    ID_VENDEDOR NUMBER REFERENCES VENDEDORES(ID_VENDEDOR),
+    FECHA_VENTA DATE DEFAULT SYSDATE,
+    MONTO NUMBER(10,2) NOT NULL
+);
+
+
+-- ==========================
+-- INSERCIÓN DE DATOS
+-- ==========================
+
+-- CLIENTES
+INSERT INTO CLIENTES VALUES (1, 'Carlos Gómez', '3112233445', 'carlos@gmail.com');
+INSERT INTO CLIENTES VALUES (2, 'María Pérez', '3125566778', 'maria@gmail.com');
+INSERT INTO CLIENTES VALUES (3, 'Juan López', '3109988776', 'juan@gmail.com');
+INSERT INTO CLIENTES VALUES (4, 'Ana Torres', '3156677889', 'ana@gmail.com');
+INSERT INTO CLIENTES VALUES (5, 'Pedro Ramírez', '3191122334', 'pedro@gmail.com');
+
+-- VEHICULOS
+INSERT INTO VEHICULOS VALUES (101, 'Toyota', 'Corolla', 2022, 85000, 'S');
+INSERT INTO VEHICULOS VALUES (102, 'Honda', 'Civic', 2021, 92000, 'S');
+INSERT INTO VEHICULOS VALUES (103, 'Ford', 'Mustang', 2023, 180000, 'S');
+INSERT INTO VEHICULOS VALUES (104, 'Chevrolet', 'Camaro', 2022, 175000, 'S');
+INSERT INTO VEHICULOS VALUES (105, 'Nissan', 'Sentra', 2021, 78000, 'S');
+
+-- VENDEDORES
+INSERT INTO VENDEDORES VALUES (201, 'Luis Fernández', 5.0);
+INSERT INTO VENDEDORES VALUES (202, 'Sofía Martínez', 4.5);
+INSERT INTO VENDEDORES VALUES (203, 'Ricardo Salazar', 6.0);
+INSERT INTO VENDEDORES VALUES (204, 'Elena Ríos', 5.5);
+INSERT INTO VENDEDORES VALUES (205, 'Miguel Castro', 4.8);
+
+-- VENTAS
+INSERT INTO VENTAS VALUES (301, 1, 101, 201, TO_DATE('2024-01-15', 'YYYY-MM-DD'), 85000);
+INSERT INTO VENTAS VALUES (302, 2, 102, 202, TO_DATE('2024-02-10', 'YYYY-MM-DD'), 92000);
+INSERT INTO VENTAS VALUES (303, 3, 103, 203, TO_DATE('2024-03-05', 'YYYY-MM-DD'), 180000);
+INSERT INTO VENTAS VALUES (304, 4, 104, 204, TO_DATE('2024-04-20', 'YYYY-MM-DD'), 175000);
+INSERT INTO VENTAS VALUES (305, 5, 105, 205, TO_DATE('2024-05-10', 'YYYY-MM-DD'), 78000);
+
+COMMIT;
+
+
+-- ==========================
+-- PROPUESTAS DE CONSULTAS
+-- ==========================
+--- calcular el total de ventas en un período determinado.
+
+--- CURSORES 
+DECLARE
+    v_total_ventas NUMBER := 0;
+BEGIN
+    -- Uso de un cursor implícito con la función SQL%ROWCOUNT
+    UPDATE VENTAS
+    SET MONTO = MONTO * 1.05  -- Aumentamos el precio en un 5%
+    WHERE FECHA_VENTA BETWEEN TO_DATE('01-01-2024', 'DD-MM-YYYY') 
+                          AND TO_DATE('31-01-2024', 'DD-MM-YYYY');
+
+    -- Mostramos cuántas filas fueron afectadas (ventas actualizadas)
+    DBMS_OUTPUT.PUT_LINE('Ventas actualizadas en enero: ' || SQL%ROWCOUNT);
+
+    -- Uso de un cursor implícito en una consulta SELECT INTO
+    SELECT SUM(MONTO) INTO v_total_ventas 
+    FROM VENTAS 
+    WHERE FECHA_VENTA BETWEEN TO_DATE('01-01-2024', 'DD-MM-YYYY') 
+                          AND TO_DATE('31-01-2024', 'DD-MM-YYYY');
+
+    DBMS_OUTPUT.PUT_LINE('Total de ventas en enero: ' || v_total_ventas);
+END;
+/
+
+
+--- CURSOR CON EXEPCIONES
+
+DECLARE
+    CURSOR c_ventas_cliente IS 
+        SELECT v.ID_VENTA, v.MONTO, v.FECHA_VENTA 
+        FROM VENTAS v 
+        WHERE v.ID_CLIENTE = 1;
+
+    v_venta_id VENTAS.ID_VENTA%TYPE;
+    v_monto VENTAS.MONTO%TYPE;
+    v_fecha VENTAS.FECHA_VENTA%TYPE;
+    
+BEGIN
+    FOR r IN c_ventas_cliente LOOP
+        DBMS_OUTPUT.PUT_LINE('Venta ID: ' || r.ID_VENTA || 
+                             ' - Monto: ' || r.MONTO || 
+                             ' - Fecha: ' || TO_CHAR(r.FECHA_VENTA, 'DD-MON-YYYY'));
+    END LOOP;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('No hay ventas registradas para este cliente.');
+END;
+/

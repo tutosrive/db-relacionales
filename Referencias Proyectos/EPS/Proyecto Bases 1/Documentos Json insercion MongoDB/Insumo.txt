@@ -1,0 +1,561 @@
+[
+    {
+        "idInsumo": 2001,
+        "nombre": "Paracetamol",
+        "descripcion": "Medicamento para aliviar el dolor y reducir la fiebre.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 100,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 50,
+            "fecha": "2024-05-01",
+		"proveedor": {"idProveedor": 1001,
+			"nombre": "Juan", 
+			"apellidos": "Perez", 
+			"direccion": "Calle 123", 
+			"telefono": "+573112345678", 
+			"correo": "juanperez@proveedor.com"}	
+        }
+    },
+    {
+        "idInsumo": 2002,
+        "nombre": "Ibuprofeno",
+        "descripcion": "Medicamento antiinflamatorio y analgésico.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 150,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 100,
+            "fecha": "2024-05-02",
+		"proveedor": {"idProveedor": 1001,
+			"nombre": "Juan", 
+			"apellidos": "Perez", 
+			"direccion": "Calle 123", 
+			"telefono": "+573112345678", 
+			"correo": "juanperez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2003,
+        "nombre": "Amoxicilina",
+        "descripcion": "Antibiótico de amplio espectro.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 200,
+        "unidadMedida": "Cápsulas",
+	"detallesProveedor": {
+            "cantidad": 80,
+            "fecha": "2024-05-03",
+	"proveedor": {"idProveedor": 1001,
+			"nombre": "Juan", 
+			"apellidos": "Perez", 
+			"direccion": "Calle 123", 
+			"telefono": "+573112345678", 
+			"correo": "juanperez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2004,
+        "nombre": "Omeprazol",
+        "descripcion": "Medicamento para reducir la producción de ácido en el estómago.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 80,
+        "unidadMedida": "Cápsulas",
+        "detallesProveedor": {
+            "cantidad": 70,
+            "fecha": "2024-05-04",
+	"proveedor": {"idProveedor": 1002,
+			"nombre": "Maria", 
+			"apellidos": "Gomez", 
+			"direccion": "Avenida 456", 
+			"telefono": "+573212345679", 
+			"correo": "mariagomez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2005,
+        "nombre": "Sábila",
+        "descripcion": "Planta con propiedades medicinales, se utiliza para tratar quemaduras y heridas.",
+        "tipoInsumo": "Planta Medicinal",
+        "cantidad": 50,
+        "unidadMedida": "Hojas",
+        "detallesProveedor": {
+            "cantidad": 90,
+            "fecha": "2024-05-05",
+	"proveedor": {"idProveedor": 1003, 
+			"nombre": "Pedro", 
+			"apellidos": "Rodriguez", 
+			"direccion": "Calle 789", 
+			"telefono": "+573501234567", 
+			"correo": "pedrorodriguez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2006,
+        "nombre": "Alcohol",
+        "descripcion": "Desinfectante para limpieza de heridas.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 100,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 120,
+            "fecha": "2024-05-07",
+	"proveedor":{"idProveedor": 1004,
+			"nombre": "Laura", "apellidos": "Hernandez",
+			"direccion": "Avenida 012",
+			"telefono": "+573112345680",
+			"correo": "laurahernandez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2007,
+        "nombre": "Gasas",
+        "descripcion": "Material para cubrir y proteger heridas.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 200,
+        "unidadMedida": "Piezas",
+        "detallesProveedor": {
+            "cantidad": 150,
+            "fecha": "2024-05-08",
+	"proveedor": {"idProveedor": 1004,
+			"nombre": "Laura",
+			"apellidos": "Hernandez",
+			"direccion": "Avenida 012",
+			"telefono": "+573112345680",
+			"correo": "laurahernandez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2008,
+        "nombre": "Jeringas",
+        "descripcion": "Instrumento médico para administrar medicamentos.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 300,
+        "unidadMedida": "Piezas",
+        "detallesProveedor": {
+            "cantidad": 110,
+            "fecha": "2024-05-09",
+	"proveedor": {"idProveedor": 1005,
+			"nombre": "Carlos",
+			"apellidos": "Lopez",
+			"direccion": "Calle 345",
+			"telefono": "+573212345681",
+			"correo": "carloslopez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2009,
+        "nombre": "Guantes de látex",
+        "descripcion": "Guantes desechables para protección del personal médico.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 400,
+        "unidadMedida": "Pares",
+        "detallesProveedor": {
+            "cantidad": 40,
+            "fecha": "2024-05-10",
+"proveedor": {"idProveedor": 1006, "nombre": "Ana", "apellidos": "Martinez", "direccion": "Avenida 678", "telefono": "+573501234568", "correo": "anamartinez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2010,
+        "nombre": "Termómetro",
+        "descripcion": "Instrumento para medir la temperatura corporal.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 50,
+        "unidadMedida": "Piezas",
+        "detallesProveedor": {
+            "cantidad": 130,
+            "fecha": "2024-05-11",
+"proveedor": {"idProveedor": 1006, "nombre": "Ana", "apellidos": "Martinez", "direccion": "Avenida 678", "telefono": "+573501234568", "correo": "anamartinez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2011,
+        "nombre": "Vendas",
+        "descripcion": "Material para envolver y proteger lesiones.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 150,
+        "unidadMedida": "Piezas",
+        "detallesProveedor": {
+            "cantidad": 85,
+            "fecha": "2024-05-12",
+"proveedor": {"idProveedor": 1007, "nombre": "David", "apellidos": "Sanchez", "direccion": "Calle 901", "telefono": "+573112345682", "correo": "davidsanchez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2012,
+        "nombre": "Clorhexidina",
+        "descripcion": "Desinfectante de amplio espectro para piel sana.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 100,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 95,
+            "fecha": "2024-05-13",
+"proveedor": {"idProveedor": 1007, "nombre": "David", "apellidos": "Sanchez", "direccion": "Calle 901", "telefono": "+573112345682", "correo": "davidsanchez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2013,
+        "nombre": "Solución salina",
+        "descripcion": "Solución estéril para limpieza de heridas y mucosas.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 200,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 55,
+            "fecha": "2024-05-14",
+"proveedor": {"idProveedor": 1008, "nombre": "Sofia", "apellidos": "Diaz", "direccion": "Avenida 234", "telefono": "+573212345683", "correo": "sofiadiaz@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2014,
+        "nombre": "Lidocaína",
+        "descripcion": "Anestésico local para procedimientos médicos.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 50,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 75,
+            "fecha": "2024-05-15",
+"proveedor": {"idProveedor": 1008, "nombre": "Sofia", "apellidos": "Diaz", "direccion": "Avenida 234", "telefono": "+573212345683", "correo": "sofiadiaz@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2015,
+        "nombre": "Sutura",
+        "descripcion": "Material para cerrar y unir tejidos corporales.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 80,
+        "unidadMedida": "Piezas",
+        "detallesProveedor": {
+            "cantidad": 65,
+            "fecha": "2024-05-16",
+"proveedor": {"idProveedor": 1008, "nombre": "Sofia", "apellidos": "Diaz", "direccion": "Avenida 234", "telefono": "+573212345683", "correo": "sofiadiaz@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2016,
+        "nombre": "Ampicilina",
+        "descripcion": "Antibiótico de amplio espectro.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 120,
+        "unidadMedida": "Cápsulas",
+        "detallesProveedor": {
+            "cantidad": 105,
+            "fecha": "2024-05-17",
+"proveedor": {"idProveedor": 1009, "nombre": "Jorge", "apellidos": "Gonzalez", "direccion": "Calle 567", "telefono": "+573501234569", "correo": "jorgegonzalez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2017,
+        "nombre": "Salbutamol",
+        "descripcion": "Medicamento para el tratamiento del asma y enfermedades pulmonares.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 70,
+        "unidadMedida": "Inhalador",
+        "detallesProveedor": {
+            "cantidad": 140,
+            "fecha": "2024-05-18",
+"proveedor": {"idProveedor": 1010, "nombre": "Paula", "apellidos": "Ramirez", "direccion": "Avenida 890", "telefono": "+573112345684", "correo": "paularamirez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2018,
+        "nombre": "Cefalexina",
+        "descripcion": "Antibiótico de amplio espectro.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 90,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 125,
+            "fecha": "2024-05-19",
+"proveedor": {"idProveedor": 1010, "nombre": "Paula", "apellidos": "Ramirez", "direccion": "Avenida 890", "telefono": "+573112345684", "correo": "paularamirez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2019,
+        "nombre": "Algodón",
+        "descripcion": "Material para limpieza e higiene.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 200,
+        "unidadMedida": "Gramos",
+        "detallesProveedor": {
+            "cantidad": 60,
+            "fecha": "2024-05-06",
+"proveedor": {"idProveedor": 1003, "nombre": "Pedro", "apellidos": "Rodriguez", "direccion": "Calle 789", "telefono": "+573501234567", "correo": "pedrorodriguez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2020,
+        "nombre": "Hidrocortisona",
+        "descripcion": "Crema para tratar inflamaciones y alergias en la piel.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 60,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 45,
+            "fecha": "2024-05-20",
+"proveedor": {"idProveedor": 1010, "nombre": "Paula", "apellidos": "Ramirez", "direccion": "Avenida 890", "telefono": "+573112345684", "correo": "paularamirez@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2021,
+        "nombre": "Suero fisiológico",
+        "descripcion": "Solución estéril para hidratación y administración de medicamentos.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 150,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 80,
+            "fecha": "2024-05-21",
+"proveedor": {"idProveedor": 1011, "nombre": "Miguel", "apellidos": "Torres", "direccion": "Calle 123", "telefono": "+573212345685", "correo": "migueltorres@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2022,
+        "nombre": "Diclofenaco",
+        "descripcion": "Medicamento antiinflamatorio y analgésico.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 100,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 60,
+            "fecha": "2024-05-22",
+"proveedor": {"idProveedor": 1012, "nombre": "Lucia", "apellidos": "Luna", "direccion": "Avenida 456", "telefono": "+573501234570", "correo": "lucialuna@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2023,
+        "nombre": "Betadine",
+        "descripcion": "Desinfectante para heridas.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 80,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 50,
+            "fecha": "2024-05-23",
+"proveedor": {"idProveedor": 1013, "nombre": "Daniel", "apellidos": "Castillo", "direccion": "Calle 789", "telefono": "+573112345686", "correo": "danielcastillo@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2024,
+        "nombre": "Ácido acetilsalicílico",
+        "descripcion": "Medicamento analgésico y antipirético.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 120,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 70,
+            "fecha": "2024-05-24",
+"proveedor": {"idProveedor": 1013, "nombre": "Daniel", "apellidos": "Castillo", "direccion": "Calle 789", "telefono": "+573112345686", "correo": "danielcastillo@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2025,
+        "nombre": "Ciclosporina",
+        "descripcion": "Inmunosupresor.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 40,
+        "unidadMedida": "Cápsulas",
+        "detallesProveedor": {
+            "cantidad": 110,
+            "fecha": "2024-05-25",
+"proveedor": {"idProveedor": 1013, "nombre": "Daniel", "apellidos": "Castillo", "direccion": "Calle 789", "telefono": "+573112345686", "correo": "danielcastillo@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2026,
+        "nombre": "Clonazepam",
+        "descripcion": "Medicamento ansiolítico y antiepiléptico.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 60,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 90,
+            "fecha": "2024-05-26",
+"proveedor": {"idProveedor": 1013, "nombre": "Daniel", "apellidos": "Castillo", "direccion": "Calle 789", "telefono": "+573112345686", "correo": "danielcastillo@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2027,
+        "nombre": "Furosemida",
+        "descripcion": "Medicamento diurético.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 50,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 120,
+            "fecha": "2024-05-27",
+"proveedor": {"idProveedor": 1014, "nombre": "Valeria", "apellidos": "Ortega", "direccion": "Avenida 012", "telefono": "+573212345687", "correo": "valeriaortega@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2028,
+        "nombre": "Metformina",
+        "descripcion": "Medicamento hipoglucemiante.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 100,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 100,
+            "fecha": "2024-05-28",
+"proveedor": {"idProveedor": 1014, "nombre": "Valeria", "apellidos": "Ortega", "direccion": "Avenida 012", "telefono": "+573212345687", "correo": "valeriaortega@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2029,
+        "nombre": "Loratadina",
+        "descripcion": "Medicamento antihistamínico.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 80,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 130,
+            "fecha": "2024-05-29",
+"proveedor": {"idProveedor": 1015, "nombre": "Diego", "apellidos": "Vargas", "direccion": "Calle 345", "telefono": "+573501234571", "correo": "diegovargas@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2030,
+        "nombre": "Simvastatina",
+        "descripcion": "Medicamento hipolipemiante.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 70,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 85,
+            "fecha": "2024-05-30",
+"proveedor": {"idProveedor": 1015, "nombre": "Diego", "apellidos": "Vargas", "direccion": "Calle 345", "telefono": "+573501234571", "correo": "diegovargas@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2031,
+        "nombre": "Metronidazol",
+        "descripcion": "Antibiótico y antiparasitario.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 90,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 75,
+            "fecha": "2024-05-31",
+"proveedor": {"idProveedor": 1015, "nombre": "Diego", "apellidos": "Vargas", "direccion": "Calle 345", "telefono": "+573501234571", "correo": "diegovargas@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2032,
+        "nombre": "Ranitidina",
+        "descripcion": "Medicamento antiulceroso.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 80,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 55,
+            "fecha": "2024-06-01",
+"proveedor": {"idProveedor": 1016, "nombre": "Carmen", "apellidos": "Guerrero", "direccion": "Avenida 678", "telefono": "+573112345688", "correo": "carmenguerrero@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2033,
+        "nombre": "Dexametasona",
+        "descripcion": "Medicamento antiinflamatorio y inmunosupresor.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 70,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 65,
+            "fecha": "2024-06-02",
+"proveedor": {"idProveedor": 1016, "nombre": "Carmen", "apellidos": "Guerrero", "direccion": "Avenida 678", "telefono": "+573112345688", "correo": "carmenguerrero@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2034,
+        "nombre": "Ciprofloxacino",
+        "descripcion": "Antibiótico de amplio espectro.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 100,
+        "unidadMedida": "Tabletas",
+        "detallesProveedor": {
+            "cantidad": 95,
+            "fecha": "2024-06-03",
+"proveedor": {"idProveedor": 1017, "nombre": "Luis", "apellidos": "Salazar", "direccion": "Calle 901", "telefono": "+573212345689", "correo": "luissalazar@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2035,
+        "nombre": "Paracetamol gotas",
+        "descripcion": "Medicamento para aliviar el dolor y reducir la fiebre en niños.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 50,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 45,
+            "fecha": "2024-06-05",
+"proveedor": {"idProveedor": 1018, "nombre": "Isabel", "apellidos": "Paz", "direccion": "Avenida 234", "telefono": "+573501234572", "correo": "isabelpaz@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2036,
+        "nombre": "Ibuprofeno suspensión",
+        "descripcion": "Medicamento antiinflamatorio y analgésico en suspensión oral para niños.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 60,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 140,
+            "fecha": "2024-06-06",
+"proveedor": {"idProveedor": 1019, "nombre": "Fernando", "apellidos": "Rojas", "direccion": "Calle 567", "telefono": "+573112345690", "correo": "fernandorojas@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2037,
+        "nombre": "Clonazepam gotas",
+        "descripcion": "Medicamento ansiolítico y antiepiléptico en forma líquida.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 40,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 50,
+            "fecha": "2024-06-08",
+"proveedor": {"idProveedor": 1020, "nombre": "Alejandra", "apellidos": "Moreno", "direccion": "Avenida 890", "telefono": "+573212345691", "correo": "alejandramoreno@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2038,
+        "nombre": "Hidrocortisona crema",
+        "descripcion": "Crema para tratar inflamaciones y alergias en la piel.",
+        "tipoInsumo": "Medicamento",
+        "cantidad": 100,
+        "unidadMedida": "Gramos",
+        "detallesProveedor": {
+            "cantidad": 50,
+            "fecha": "2024-06-08",
+"proveedor": {"idProveedor": 1020, "nombre": "Alejandra", "apellidos": "Moreno", "direccion": "Avenida 890", "telefono": "+573212345691", "correo": "alejandramoreno@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2039,
+        "nombre": "Solución fisiológica",
+        "descripcion": "Solución estéril para hidratación y administración de medicamentos.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 100,
+        "unidadMedida": "Litros",
+        "detallesProveedor": {
+            "cantidad": 125,
+            "fecha": "2024-06-07",
+"proveedor": {"idProveedor": 1019, "nombre": "Fernando", "apellidos": "Rojas", "direccion": "Calle 567", "telefono": "+573112345690", "correo": "fernandorojas@proveedor.com"}
+        }
+    },
+    {
+        "idInsumo": 2040,
+        "nombre": "Alcohol gel",
+        "descripcion": "Desinfectante para manos.",
+        "tipoInsumo": "Material de Curación",
+        "cantidad": 200,
+        "unidadMedida": "Mililitros",
+        "detallesProveedor": {
+            "cantidad": 105,
+            "fecha": "2024-06-04",
+"proveedor": {"idProveedor": 1017, "nombre": "Luis", "apellidos": "Salazar", "direccion": "Calle 901", "telefono": "+573212345689", "correo": "luissalazar@proveedor.com"}
+        }
+    }
+]
