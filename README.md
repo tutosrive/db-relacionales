@@ -7,7 +7,7 @@
 ---
 
 > La mayoría de clases de este curso han sido grabadas como "Screen Recorder" ... Dicha playlist es:
-> <a href="https://www.youtube.com/playlist?list=PLbrkyIFCPjn17snSYPe9y8Xlu4bLQYbx9"><img width="300" alt="sql1" src="https://github.com/user-attachments/assets/7b44400e-5f6c-4376-ac51-ad8cb1ed6a22" /></a>
+> <a href="https://www.youtube.com/playlist?list=PLbrkyIFCPjn17snSYPe9y8Xlu4bLQYbx9"><img width="300" alt="sql1" src="https://cdn.jsdelivr.net/gh/tutosrive/images-projects-srm-trg@main/others/sql1.png" /></a>
 
 ---
 
